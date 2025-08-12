@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body .first-row {
+  background-color: #2E438E;
+  gap: 6px;
+  height: 100vh;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+body .btn {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 0;
+  margin-top: 10px;
+}
+
+.row .card {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+nav li {
+  list-style-type: none;
+  color: #2E438E;
+  size: 16px;
+  font-weight: 400;
+}
+
+.vector {
+  position: absolute;
+  top: 0;
+}
+
+.text img {
+  position: relative;
+  top: -29%;
+}
+.text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.img-fluid {
+  height: 100vh;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #2E438E;
+  width: 280px;
+  height: 161px;
+  padding: 20px;
+  gap: 10px;
+  color: #2E438E;
+  border-radius: 0;
+}
+
+.card-wrap {
+  gap: 20px;
+}
+
+.card-value {
+  width: fit-content;
+}
+
+.long-card {
+  width: 205px;
+  height: 336px;
+  border: 1px solid #2E438E;
+  padding: 10px;
+  line-height: 100%;
+  color: #2E438E;
+  gap: 20px;
+}
+
+.simple h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  color: #2E438E;
+}
+
+.col-7 {
+  gap: 10px;
+}
+
+.simple {
+  position: relative;
+  left: -8%;
+}
+
+.img-wrap::before {
+  content: url("Vector.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.top {
+  gap: 20px;
+  color: #2E438E;
+}
+.top p {
+  font-size: 24px;
+  font-weight: 300;
+}
+.top .undergrad {
+  border-bottom: 2px solid #2E438E;
+}
+
+.program h1 {
+  color: #2E438E;
+  font-weight: 700;
+}
+.program .btn {
+  color: #2E438E;
+  border: 1px solid #2E438E;
+  border-radius: 0;
+  margin-top: 10px;
+}
+
+.simple-form {
+  position: relative;
+  gap: 10px;
+  width: fit-content;
+}
+.simple-form h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  color: #2E438E;
+}
+
+.image-wrapper {
+  position: absolute;
+}
+
+.image-wrapper img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.text-image {
+  position: absolute;
+  left: 35%;
+  top: 10%;
+}
+.text-image h1 {
+  color: #2E438E;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.slide {
+  background-color: #2E438E;
+  height: 720px;
+  position: relative;
+}
+
+.image-slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.image-text {
+  color: #FFFFFF;
+}
+
+.testimonial-card {
+  background-color: #f8f9fa;
+  border-left: 5px solid #0d6efd;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+.button {
+  color: #2E438E;
+  border: 1px solid #2E438E;
+}
+
+.border1 {
+  border: 1px solid #2E438E;
+  border-bottom: 8px solid #2E438E;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+  background: transparent;
+  color: gray;
+  border: none;
+}
+
+.nav-pills .nav-link.active {
+  color: #2E438E;
+  background: transparent;
+  border-bottom: 2px solid #2E438E;
+}
+
+.nav-pills .nav-link:hover {
+  color: #2E438E;
+}
+
+.border1:hover {
+  background-color: #2E438E;
+  cursor: pointer;
+}
+
+.border1 a {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

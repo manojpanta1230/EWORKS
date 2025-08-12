@@ -1,0 +1,356 @@
+// @mixin fontName($theme: DarkGray){
+//     background-color: $theme;
+//     color: white;
+// }
+
+// .info{
+//     @include fontName(Gray);
+// }
+
+// %message{
+//     font-size: 16px;
+//     color: #333;
+// }
+
+// %heavy{
+//     font-weight: bold;
+// }
+
+// .value{
+//     @extend %message;
+//     @extend %heavy;
+//     font-size: 20px;
+// }
+
+// nav{
+//     display: flex;
+
+//     ul{
+//         background-color: blue;
+//         li{
+//             background-color: red;
+//         }
+//     }
+// }
+
+@use 'base';
+@use "sass:math";
+
+
+// .sucess{ 
+//     @include navStyle(green);
+// }
+
+// //Extend/Inheritance
+// %value{
+//     background-color: #f0f0f0;
+//     padding: 20px;
+//     border-radius: 5px; 
+// }
+// %header{
+
+//     font-size: 24px;
+//     font-weight: bold;
+// }   
+// .value{
+//     @extend %value;
+//   ;
+// }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: base.$primary-font;
+
+
+    .first-row {
+        background-color: base.$primary-color;
+        gap: base.$fixed_gap - 4px;
+        height: 100vh;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+
+    }
+
+    .btn {
+        color: base.$secondary-color;
+        border: 1px solid base.$secondary-color;
+        border-radius: 0;
+        margin-top: base.$fixed_margin;
+    }
+
+}
+
+.row .card {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: base.$fixed_margin + 5px;
+
+    }
+
+    li {
+        list-style-type: none;
+        color: base.$primary-color;
+        size: base.$font_size + 1px;
+        font-weight: base.$font_weight;
+
+    }
+}
+
+.vector {
+    position: absolute;
+    top: 0;
+}
+
+
+
+.text {
+
+    img {
+        position: relative;
+        top: -29%;
+
+    }
+
+    h1 {
+
+        font-size: base.$font_size + 45px;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 0.5px white;
+
+    }
+}
+
+
+
+.img-fluid {
+    height: 100vh;
+
+}
+
+.card {
+    background-color: base.$secondary-color;
+    border: 1px solid base.$primary_color;
+    width: base.$fixed_margin + 270px;
+    height: base.$fixed_margin + 151px;
+    padding: base.$fixed_margin+10px;
+    gap: base.$fixed_gap;
+    color: base.$primary-color;
+    border-radius: 0;
+
+
+
+}
+
+.card-wrap {
+    gap: base.$fixed_gap + 10px;
+}
+
+.card-value {
+    width: fit-content;
+}
+
+.long-card {
+    width: base.$font-size + 190px;
+    height: base.$font-size + 321px;
+    border: 1px solid base.$primary_color;
+    padding: base.$fixed_margin;
+    line-height: 100%;
+    color: base.$primary_color;
+    gap: base.$fixed_gap + 10px;
+}
+
+.simple {
+    h1 {
+        font-weight: base.$font_weight + 300;
+        font-size: base.$font_size + 33px;
+        line-height: 100%;
+        color: base.$primary_color;
+    }
+}
+
+.col-7 {
+    gap: base.$fixed_gap ;
+}
+
+.simple {
+    position: relative;
+    left: -8%;
+}
+
+.img-wrap::before {
+    content: url('Vector.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.top {
+    gap: base.$fixed_gap + 10px;
+    color: base.$primary_color;
+
+    p {
+        font-size: base.$font_size + 9px;
+        font-weight: base.$font_weight - 100;
+
+    }
+
+    .undergrad {
+        border-bottom: 2px solid base.$primary_color;
+    }
+}
+
+.program {
+    h1 {
+        color: base.$primary-color;
+        font-weight: base.$font_weight+300;
+
+    }
+
+    .btn {
+        color: base.$primary-color;
+        border: 1px solid base.$primary-color;
+        border-radius: 0;
+        margin-top: base.$fixed_margin;
+    }
+}
+
+.simple-form {
+    position: relative;
+    gap: 10px;
+    width: fit-content;
+
+    h1 {
+        font-weight: base.$font_weight + 300;
+        font-size: base.$font_size + 33px;
+        line-height: 100%;
+        color: base.$primary_color;
+    }
+}
+
+
+
+
+
+.image-wrapper {
+    position: absolute;
+}
+
+.image-wrapper img {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.text-image {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+
+
+    h1 {
+        color: base.$primary-color;
+        font-weight: base.$font-weight + 200;
+        font-size: base.$font-size + 33;
+    }
+}
+
+.slide {
+    background-color: base.$primary-color;
+    height: 720px;
+    position: relative;
+
+}
+
+.image-slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.image-text {
+    color: base.$secondary-color;
+}
+
+.testimonial-card {
+    background-color: #f8f9fa;
+    border-left: 5px solid #0d6efd;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+
+    border: 3px solid #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+.button {
+    color: base.$primary-color;
+    border: 1px solid base.$primary-color;
+}
+
+.border1 {
+
+    border: 1px solid base.$primary-color;
+    border-bottom: 8px solid base.$primary-color;
+}
+.nav-pills .nav-link{
+  border-radius: 0;
+  background: transparent;
+  color: gray;
+  border: none;
+}
+
+
+.nav-pills .nav-link.active {
+  color:base.$primary-color;
+  background: transparent   ;
+  border-bottom: 2px solid base.$primary-color;
+
+}
+
+.nav-pills .nav-link:hover {
+  color:base.$primary-color;
+}
+.border1:hover{
+    background-color:base.$primary-color;
+   
+    cursor: pointer;
+}
+.border1 {
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
