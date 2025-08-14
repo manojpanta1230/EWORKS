@@ -66,7 +66,7 @@
 
 body {
     font-family: base.$primary-font;
-
+    overflow-x: hidden;
 
     .first-row {
         background-color: base.$primary-color;
@@ -101,11 +101,14 @@ nav {
     padding: 20px;
 
 
+
+
     ul {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: base.$fixed_margin + 5px;
+        z-index: 1000;
 
     }
 
@@ -145,10 +148,6 @@ nav {
 
 
 
-.img-fluid {
-    height: 100vh;
-
-}
 
 .card {
     background-color: base.$secondary-color;
@@ -166,10 +165,12 @@ nav {
 
 .card-wrap {
     gap: base.$fixed_gap + 10px;
+
 }
 
 .card-value {
     width: fit-content;
+    gap: base.$fixed_gap + 10px;
 }
 
 .long-card {
@@ -183,7 +184,7 @@ nav {
 }
 
 .simple {
-    h1 {
+    h2 {
         font-weight: base.$font_weight + 300;
         font-size: base.$font_size + 33px;
         line-height: 100%;
@@ -195,10 +196,7 @@ nav {
     gap: base.$fixed_gap ;
 }
 
-.simple {
-    position: relative;
-    left: -8%;
-}
+
 
 .img-wrap::before {
     content: url('Vector.png');
@@ -226,11 +224,7 @@ nav {
 }
 
 .program {
-    h1 {
-        color: base.$primary-color;
-        font-weight: base.$font_weight+300;
-
-    }
+   
 
     .btn {
         color: base.$primary-color;
@@ -241,9 +235,7 @@ nav {
 }
 
 .simple-form {
-    position: relative;
-    gap: 10px;
-    width: fit-content;
+
 
     h1 {
         font-weight: base.$font_weight + 300;
@@ -252,10 +244,18 @@ nav {
         color: base.$primary_color;
     }
 }
+.button1{
+    border: 1px solid base.$primary-color;
+    padding: base.$fixed_margin - 3px;
+    background-color: transparent;
+    color:base.$primary-color;
+}
 
 
-
-
+.partner{
+    color: base.$primary_color;
+    border: 1px solid base.$primary_color;
+}
 
 .image-wrapper {
     position: absolute;
@@ -324,33 +324,164 @@ nav {
     border: 1px solid base.$primary-color;
     border-bottom: 8px solid base.$primary-color;
 }
-.nav-pills .nav-link{
-  border-radius: 0;
-  background: transparent;
-  color: gray;
-  border: none;
+
+.nav-pills .nav-link {
+    border-radius: 0;
+    background: transparent;
+    color: gray;
+    border: none;
 }
 
 
 .nav-pills .nav-link.active {
-  color:base.$primary-color;
-  background: transparent   ;
-  border-bottom: 2px solid base.$primary-color;
+    color: base.$primary-color;
+    background: transparent;
+    border-bottom: 2px solid base.$primary-color;
 
 }
 
 .nav-pills .nav-link:hover {
-  color:base.$primary-color;
+    color: base.$primary-color;
 }
-.border1:hover{
-    background-color:base.$primary-color;
-   
-    cursor: pointer;
-}
+
 .border1 {
-    a{
+    border-bottom: 8px solid var(--border-color);
+    transition: background-color 0.3s ease-in;
+
+    a {
         text-decoration: none;
         color: black;
     }
+
+
+    &:hover {
+        background-color: var(--border-color, black);
+
+        a {
+            color: base.$secondary-color;
+        }
+    }
 }
 
+.gradient-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(white, transparent);
+    width: 100%;
+    height: 59vh;
+}
+
+.button1 {
+    color: base.$primary-color;
+    border: 1px solid base.$primary-color;
+    border-radius: 0;
+    margin-top: base.$fixed_margin;
+}
+
+.arrow {
+ top: 0;
+ right: 0;
+}
+
+.slide {
+    background-color: base.$primary-color;
+}
+
+.image-slide {
+    right: 0;
+}
+
+.first-bar {
+    background-color: base.$light-blue;
+
+    p {
+        font-size: base.$font_size + 33px;
+        color: base.$secondary-color;
+    }
+}
+
+.button-line {
+    .button1 {
+        color: base.$secondary_color;
+        border:1px solid base.$secondary-color;
+        &:hover {
+            background-color: darken(base.$primary-color, 10%);
+            color: white;
+        }
+    }
+}
+
+footer {
+    background-color: base.$primary-color;
+    height: 100vh;
+    color: base.$secondary-color;
+}
+
+.quick-links {
+    .nav-link {
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+        }
+    }
+}
+
+.socialmedia {
+    gap: base.$fixed_gap + 10px;
+    margin-left: 10%;
+    padding: base.$fixed_margin;
+
+}
+
+.card-details {
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+.card-date {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: base.$secondary-color;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card-date span {
+    display: block;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.card-img-top {
+    position: relative;
+}
+
+.news-badge {
+    background-color: #6f42c1;
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.text {
+    font-weight: base.$font_weight + 300;
+    color: base.$primary_color;
+
+    h1 {
+        font-size: base.$font_size + 33px;
+    }
+
+    p {
+        color: black;
+    }
+}
