@@ -224,7 +224,7 @@ nav {
 }
 
 .program {
-   
+
 
     .btn {
         color: base.$primary-color;
@@ -244,15 +244,16 @@ nav {
         color: base.$primary_color;
     }
 }
-.button1{
+
+.button1 {
     border: 1px solid base.$primary-color;
     padding: base.$fixed_margin - 3px;
     background-color: transparent;
-    color:base.$primary-color;
+    color: base.$primary-color;
 }
 
 
-.partner{
+.partner {
     color: base.$primary_color;
     border: 1px solid base.$primary_color;
 }
@@ -380,8 +381,8 @@ nav {
 }
 
 .arrow {
- top: 0;
- right: 0;
+    top: 0;
+    right: 0;
 }
 
 .slide {
@@ -404,7 +405,8 @@ nav {
 .button-line {
     .button1 {
         color: base.$secondary_color;
-        border:1px solid base.$secondary-color;
+        border: 1px solid base.$secondary-color;
+
         &:hover {
             background-color: darken(base.$primary-color, 10%);
             color: white;
@@ -439,7 +441,7 @@ footer {
 
 .card-details {
     position: relative;
-    width: 50%;
+    width: 20rem;
     height: 50%;
 }
 
@@ -473,15 +475,23 @@ footer {
     text-decoration: none;
 }
 
-.text {
-    font-weight: base.$font_weight + 300;
-    color: base.$primary_color;
+.button-line1 {
+    right: 30%;
+}
 
-    h1 {
-        font-size: base.$font_size + 33px;
-    }
+.arrow-line {
 
-    p {
-        color: black;
-    }
+    transform: rotate(-180deg);
+
+}
+
+.text1 {
+    z-index: 1000;
+}
+
+.arrow1 {
+    height: 190vh;
+    left: -41%;
+
+   
 }

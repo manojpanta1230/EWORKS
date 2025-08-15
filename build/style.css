@@ -315,7 +315,7 @@ footer {
 
 .card-details {
   position: relative;
-  width: 50%;
+  width: 20rem;
   height: 50%;
 }
 
@@ -349,15 +349,21 @@ footer {
   text-decoration: none;
 }
 
-.text {
-  font-weight: 700;
-  color: #2E438E;
+.button-line1 {
+  right: 30%;
 }
-.text h1 {
-  font-size: 48px;
+
+.arrow-line {
+  transform: rotate(-180deg);
 }
-.text p {
-  color: black;
+
+.text1 {
+  z-index: 1000;
+}
+
+.arrow1 {
+  height: 190vh;
+  left: -41%;
 }
 
 /*# sourceMappingURL=style.css.map */
