@@ -553,7 +553,7 @@ footer {
 
 .bottom-footer{
     background-color: base.$secondary-color;
-    height: 15vh;
+   height: 15vh;
 }
 .description{
     p{
@@ -580,7 +580,7 @@ footer {
     width: 31.45px;
 }
 .full-description{
-    margin-top: 30px;
+    margin-top: base.$fixed_margin + 15px;
 }
 .bottom-footer{
 .college-logo{
@@ -592,4 +592,21 @@ footer {
 }
 .order-list{
 list-style-type: none;
+}
+.contact-number{
+    .call{
+        background-color: #f8f9fa;
+          top: -12px;
+    right: 74%;
+    }
+    p{
+        border: 5px solid base.$light-blue;
+        border-radius:30px;
+        padding: 10px;
+    }
+    .fa-phone{
+        background-color: base.$light-blue;
+        border-radius: 50%;
+        width: fit-content;
+    }
 }
