@@ -434,7 +434,7 @@ footer {
 
 .socialmedia {
     gap: base.$fixed_gap + 10px;
-    margin-left: 10%;
+
     padding: base.$fixed_margin;
 
 }
@@ -485,13 +485,109 @@ footer {
 
 }
 
+.arrow-line1 {
+
+    top: 0;
+    right: 0;
+
+}
+
 .text1 {
     z-index: 1000;
+    margin-bottom: base.$fixed_margin + 80px;
 }
 
 .arrow1 {
     height: 190vh;
     left: -41%;
 
-   
+
 }
+
+.event {
+    background-color: base.$primary-color;
+    height: 100vh;
+}
+
+
+.testimonial-card1 {
+
+    width: base.$fixed_margin + 342px;
+    height: base.$fixed_margin + 186px;
+    width: 392px;
+    max-height: 212px;
+}
+
+.testimonial-inner {
+    background: base.$secondary-color;
+    padding: base.$fixed_margin + 10px;
+    gap: 15px;
+}
+
+.testimonial-inner img {
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+}
+
+.quote-mark {
+    font-size: base.$font-size +80px;
+    text-align: justify;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    right: 18px;
+    color:var(--font-color);
+    opacity: 25%;
+}
+
+.student-name {
+    font-weight: bold;
+    
+}
+
+.student-role {
+    color:var(--font-color);
+}
+
+.bottom-footer{
+    background-color: base.$secondary-color;
+    height: 15vh;
+}
+.description{
+    p{
+        font-weight: base.$font-weight - 100;
+    }
+}
+
+.newsletter{
+    padding: base.$fixed_margin +20px;
+    background-color: base.$footer-color;
+.button1{
+    background-color: base.$light-blue;
+    color: base.$secondary-color;
+    border: none;
+
+}
+}
+
+.icons-value {
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    height: 31.45px;
+    width: 31.45px;
+}
+.full-description{
+    margin-top: 30px;
+}
+.bottom-footer{
+.college-logo{
+    img{
+    height: 50px;
+    
+}
+}
+}
+

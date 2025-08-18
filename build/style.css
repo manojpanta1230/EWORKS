@@ -309,7 +309,6 @@ footer {
 
 .socialmedia {
   gap: 20px;
-  margin-left: 10%;
   padding: 10px;
 }
 
@@ -357,13 +356,97 @@ footer {
   transform: rotate(-180deg);
 }
 
+.arrow-line1 {
+  top: 0;
+  right: 0;
+}
+
 .text1 {
   z-index: 1000;
+  margin-bottom: 90px;
 }
 
 .arrow1 {
   height: 190vh;
   left: -41%;
+}
+
+.event {
+  background-color: #2E438E;
+  height: 100vh;
+}
+
+.testimonial-card1 {
+  width: 352px;
+  height: 196px;
+  width: 392px;
+  max-height: 212px;
+}
+
+.testimonial-inner {
+  background: #FFFFFF;
+  padding: 20px;
+  gap: 15px;
+}
+
+.testimonial-inner img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.quote-mark {
+  font-size: 95px;
+  text-align: justify;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  right: 18px;
+  color: var(--font-color);
+  opacity: 25%;
+}
+
+.student-name {
+  font-weight: bold;
+}
+
+.student-role {
+  color: var(--font-color);
+}
+
+.bottom-footer {
+  background-color: #FFFFFF;
+  height: 15vh;
+}
+
+.description p {
+  font-weight: 300;
+}
+
+.newsletter {
+  padding: 30px;
+  background-color: rgba(21, 135, 197, 0.5019607843);
+}
+.newsletter .button1 {
+  background-color: #17A8DF;
+  color: #FFFFFF;
+  border: none;
+}
+
+.icons-value {
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px; */
+  height: 31.45px;
+  width: 31.45px;
+}
+
+.full-description {
+  margin-top: 30px;
+}
+
+.bottom-footer .college-logo img {
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

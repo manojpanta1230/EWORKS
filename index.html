@@ -1,563 +1,689 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" /> <link
-      rel="stylesheet" href="build/style.css" />
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <script src="js/slider.js"></script> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Eworks</title>
+	<head>
+		<meta charset="UTF-8"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="build/style.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link
+		rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<!-- <script src="js/slider.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<title>Eworks</title>
 
-  </head>
-  <body>
-    <!-- <div class="row first-row ">
-  <div class="col-6 img-wrap ">
+	</head>
+	<body>
+		<!-- <div class="row first-row ">
+		  <div class="col-6 img-wrap ">
+		
+		    <img src="Images/CollegePhoto.png" alt="Vector" class="img-fluid"> 
+		  </div>
+		  
+		  <div class="col-6 d-flex flex-column justify-content-center text-start">
+		  <div class="text">
+		  <img src="Images/whitelogo.png" alt="">
+		  <h1 class> MORE  THAN <br> A  COLLEGE ...</h1>
+		      <button type="button" class="btn btn-outline ">Apply Now</button>
+		  </div>
+		</div>
+		<div class="card" style="width: 22rem; height: 12rem;">
+		  <div class="card-body">
+		    <h5 class="card-title">Special title treatment</h5>
+		    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		    <a href="#" class="btn btn-primary">Go somewhere</a>
+		  </div>
+		</div>
+		</div> -->
 
-    <img src="Images/CollegePhoto.png" alt="Vector" class="img-fluid"> 
-  </div>
-  
-  <div class="col-6 d-flex flex-column justify-content-center text-start">
-  <div class="text">
-  <img src="Images/whitelogo.png" alt="">
-  <h1 class> MORE  THAN <br> A  COLLEGE ...</h1>
-      <button type="button" class="btn btn-outline ">Apply Now</button>
-  </div>
-</div>
-<div class="card" style="width: 22rem; height: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div> -->
+		<div class="container position-relative"></div>
+		<div class="arrow position-absolute">
+			<img src="Images/arrow.svg" alt>
+		</div>
 
-    <div class="container position-relative"></div>
-    <div class="arrow position-absolute">
-      <img src="Images/arrow.svg" alt>
-    </div>
+		<div class="container z-1000">
 
-    <div class="container z-1000">
+			<nav>
 
-      <nav>
+				<!-- <div class="vector"><img src="Vector.svg" alt="" ></div> -->
+				<img src="Images/Blacklogo.png" alt="Eworks Logo">
+				<ul>
+					<li>About</li>
+					<li>Courses</li>
+					<li>News</li>
+					<li>Gallery</li>
+					<li>Contact</li>
+					<li>
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</li>
+					<li>
+						<i class="fa-solid fa-bars"></i>
+					</li>
 
-        <!-- <div class="vector"><img src="Vector.svg" alt="" ></div> -->
-        <img src="Images/Blacklogo.png" alt="Eworks Logo">
-        <ul>
-          <li>About</li>
-          <li>Courses</li>
-          <li>News</li>
-          <li>Gallery</li>
-          <li>Contact</li>
-          <li><i class="fa-solid fa-magnifying-glass"></i></li>
-          <li>
-            <i class="fa-solid fa-bars"></i>
-          </li>
- 
-        </ul>
-      </nav>
+				</ul>
+			</nav>
 
-      <div class="d-flex p-3">
-        <div class="col-6 d-flex card-wrap">
-          <div class="col-7 d-flex flex-column card-value ">
-            <div
-              class="card d-flex flex-column justify-content-center align-items-start"
-              style="background-color: #2E438E; color: white;">
-              <img src="Images/Trophy_play.png" alt>
-              <p>Academic Sucess Center</p>
-            </div>
-            <div
-              class="card d-flex flex-column justify-content-center align-items-start ">
-              <img src="Images/Trophy.png" alt>
-              <p>Counselling & Wellbeing Unit</p>
-            </div>
-            <div
-              class="card d-flex flex-column justify-content-center align-items-start ">
-              <img src="Images/Trophy.png" alt>
-              <p>Academic Sucess Center</p>
-            </div>
-          </div>
-          <div class="col-5 d-flex flex-column justify-content-end">
-            <div
-              class="long-card d-flex flex-column justify-content-end align-items-start  ">
-              <img src="Images/Trophy.png" alt>
-              <p>Academic Sucess Center</p>
-            </div>
-          </div>
+			<div class="d-flex p-3">
+				<div class="col-6 d-flex card-wrap">
+					<div class="col-7 d-flex flex-column card-value ">
+						<div class="card d-flex flex-column justify-content-center align-items-start" style="background-color: #2E438E; color: white;">
+							<img src="Images/Trophy_play.png" alt>
+							<p>Academic Sucess Center</p>
+						</div>
+						<div class="card d-flex flex-column justify-content-center align-items-start ">
+							<img src="Images/Trophy.png" alt>
+							<p>Counselling & Wellbeing Unit</p>
+						</div>
+						<div class="card d-flex flex-column justify-content-center align-items-start ">
+							<img src="Images/Trophy.png" alt>
+							<p>Academic Sucess Center</p>
+						</div>
+					</div>
+					<div class="col-5 d-flex flex-column justify-content-end">
+						<div class="long-card d-flex flex-column justify-content-end align-items-start  ">
+							<img src="Images/Trophy.png" alt>
+							<p>Academic Sucess Center</p>
+						</div>
+					</div>
 
-        </div>
-        <div class="col-6 d-flex flex-column justify-content-end simple">
-          <h2> Experimental <br> Journey</h2>
-          <p>Lorem Ipsum is simply dummy text of the <br>printing and
-            typesetting industry. Lorem Ipsum <br> has.</p>
-        </div>
+				</div>
+				<div class="col-6 d-flex flex-column justify-content-end simple">
+					<h2>
+						Experimental
+						<br>
+						Journey</h2>
+					<p>Lorem Ipsum is simply dummy text of the
+						<br>printing and
+						            typesetting industry. Lorem Ipsum
+						<br>
+						has.</p>
+				</div>
 
-      </div>
+			</div>
 
-    </div>
-      <div class="container-fluid position-relative p-0 overflow-hidden">
-        <div>
-          
-        <img src="Images/arrow.svg" alt="" class="position-absolute arrow-line arrow1"> </div>
-        <div class="image-top">
-          <img src="Images/images.png" alt ="" class="w-100">
-        </div>
-      </div>
-      <ul class="nav nav-pills mb-3 p-3 navtab container" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-home" type="button" role="tab"
-            aria-controls="pills-home" aria-selected="true">
-            Undergrad
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-            data-bs-target="#pills-profile" type="button" role="tab"
-            aria-controls="pills-profile" aria-selected="false">
-            PostGrad
-          </button>
-        </li>
-      </ul>
+		</div>
+		<div class="container-fluid position-relative p-0 overflow-hidden">
+			<div>
 
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-          aria-labelledby="pills-home-tab">
-          <div class="container-lg">
-            <div class="row second-row p-4">
+				<img src="Images/arrow.svg" alt="" class="position-absolute arrow-line arrow1">
+			</div>
+			<div class="image-top">
+				<img src="Images/images.png" alt="" class="w-100">
+			</div>
+		</div>
+		<ul class="nav nav-pills mb-3 p-3 navtab container" id="pills-tab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+					Undergrad
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+					PostGrad
+				</button>
+			</li>
+		</ul>
 
-              <div class="col-auto d-flex flex-column justify-content-center">
-                <div class="row mt-3">
-                  <div class="col-auto">
-                    <div class="text-black p-3 text-center border1 "
-                      style="--border-color:#2366AA;border-bottom: 8px solid #2366AA">
-                      <a href><p>BBA (Hons) Business <br>and Managemen</p></a>
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <div
-                      class="text-black p-3 text-center d-flex justify-content-start align-items-start border1"
-                      style="--border-color:black;border-bottom: 8px solid black">
-                      <a href><p>BA (Hons) Hospitality Management <br>
-                          (BHM)</p></a>
-                    </div>
-                  </div>
-                </div>
+		<div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+				<div class="container-lg">
+					<div class="row second-row p-4">
 
-                <div class="row mt-3">
+						<div class="col-auto d-flex flex-column justify-content-center">
+							<div class="row mt-3">
+								<div class="col-auto">
+									<div class="text-black p-3 text-center border1 " style="--border-color:#2366AA;border-bottom: 8px solid #2366AA">
+										<a href>
+											<p>BBA (Hons) Business
+												<br>and Managemen</p>
+										</a>
+									</div>
+								</div>
+								<div class="col-auto">
+									<div class="text-black p-3 text-center d-flex justify-content-start align-items-start border1" style="--border-color:black;border-bottom: 8px solid black">
+										<a href>
+											<p>BA (Hons) Hospitality Management
+												<br>
+												(BHM)</p>
+										</a>
+									</div>
+								</div>
+							</div>
 
-                  <div class="col-auto">
-                    <div
-                      class="text-black p-3 text-center d-flex justify-content-start align-items-start border1"
-                      style=" --border-color:#6F427B;border-bottom: 8px solid #6F427B">
+							<div class="row mt-3">
 
-                      <a href><p>BA (Hons) Hospitality Management <br>
-                          (BHM)</p></a>
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <div class="text-black p-3 border1"
-                      style="--border-color:#2366AA;border-bottom: 8px solid #2366AA">
+								<div class="col-auto">
+									<div class="text-black p-3 text-center d-flex justify-content-start align-items-start border1" style=" --border-color:#6F427B;border-bottom: 8px solid #6F427B">
 
-                      <a href><p>BBA (Hons) Business <br>and Managemen</p></a>
-                    </div>
-                  </div>
-                </div>
+										<a href>
+											<p>BA (Hons) Hospitality Management
+												<br>
+												(BHM)</p>
+										</a>
+									</div>
+								</div>
+								<div class="col-auto">
+									<div class="text-black p-3 border1" style="--border-color:#2366AA;border-bottom: 8px solid #2366AA">
 
-                <div class="row mt-3">
-                  <div class="col-auto">
-                    <div
-                      class="text-black p-3 text-center d-flex justify-content-start align-items-start border1"
-                      style=" --border-color:#2366AA;border-bottom: 8px solid #2366AA">
+										<a href>
+											<p>BBA (Hons) Business
+												<br>and Managemen</p>
+										</a>
+									</div>
+								</div>
+							</div>
 
-                      <a href="#"><p>BBA (Hons) Business <br>and
-                          Managemen</p></a>
-                    </div>
-                  </div>
-                  <div class="col-auto ">
-                    <div
-                      class="text-black p-3 text-center d-flex justify-content-start align-items-start border1"
-                      style=" --border-color:#886BAE;border-bottom: 8px solid #886BAE">
+							<div class="row mt-3">
+								<div class="col-auto">
+									<div class="text-black p-3 text-center d-flex justify-content-start align-items-start border1" style=" --border-color:#2366AA;border-bottom: 8px solid #2366AA">
 
-                      <a href><p>BA (Hons) Hospitality Management <br>
-                          (BHM)</p></a>
-                    </div>
-                  </div>
-                </div>
+										<a href="#">
+											<p>BBA (Hons) Business
+												<br>and
+												                          Managemen</p>
+										</a>
+									</div>
+								</div>
+								<div class="col-auto ">
+									<div class="text-black p-3 text-center d-flex justify-content-start align-items-start border1" style=" --border-color:#886BAE;border-bottom: 8px solid #886BAE">
 
-              </div>
+										<a href>
+											<p>BA (Hons) Hospitality Management
+												<br>
+												(BHM)</p>
+										</a>
+									</div>
+								</div>
+							</div>
 
-              <div
-                class="col-auto program d-flex flex-column justify-content-end align-items-start simple">
-                <img src="Images/Group 4.svg" alt>
-                <h2>Undergrad <br>Programme</h2>
-                <button type="button" class="button1">Apply Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-          aria-labelledby="pills-profile-tab">
+						</div>
 
-          <div class="container-lg">
-            <div class="row second-row p-4">
+						<div class="col-auto program d-flex flex-column justify-content-end align-items-start simple">
+							<img src="Images/Group 4.svg" alt>
+							<h2>Undergrad
+								<br>Programme</h2>
+							<button type="button" class="button1">Apply Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
-              <div class="col-auto d-flex flex-column justify-content-center">
-                <div class="row mt-3">
-                  <div class="col-auto">
-                    <div class="text-black p-3 text-center border1 "
-                      style="--border-color:#2366AA;border-bottom: 8px solid #2366AA">
-                      <a href><p>BBA (Hons) Business <br>and Managemen</p></a>
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <div
-                      class="text-black p-3 text-center d-flex justify-content-start align-items-start border1"
-                      style="--border-color:black;border-bottom: 8px solid black">
-                      <a href><p>BA (Hons) Hospitality Management <br>
-                          (BHM)</p></a>
-                    </div>
-                  </div>
-                </div>
+				<div class="container-lg">
+					<div class="row second-row p-4">
 
-                <div class="row mt-3">
+						<div class="col-auto d-flex flex-column justify-content-center">
+							<div class="row mt-3">
+								<div class="col-auto">
+									<div class="text-black p-3 text-center border1 " style="--border-color:#2366AA;border-bottom: 8px solid #2366AA">
+										<a href>
+											<p>BBA (Hons) Business
+												<br>and Managemen</p>
+										</a>
+									</div>
+								</div>
+								<div class="col-auto">
+									<div class="text-black p-3 text-center d-flex justify-content-start align-items-start border1" style="--border-color:black;border-bottom: 8px solid black">
+										<a href>
+											<p>BA (Hons) Hospitality Management
+												<br>
+												(BHM)</p>
+										</a>
+									</div>
+								</div>
+							</div>
 
-                  <div class="col-auto">
-                    <div
-                      class="text-black p-3 text-center d-flex justify-content-start align-items-start border1"
-                      style=" --border-color:#6F427B;border-bottom: 8px solid #6F427B">
+							<div class="row mt-3">
 
-                      <a href><p>BA (Hons) Hospitality Management <br>
-                          (BHM)</p></a>
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <div class="text-black p-3 border1"
-                      style="--border-color:#2366AA;border-bottom: 8px solid #2366AA">
+								<div class="col-auto">
+									<div class="text-black p-3 text-center d-flex justify-content-start align-items-start border1" style=" --border-color:#6F427B;border-bottom: 8px solid #6F427B">
 
-                      <a href><p>BBA (Hons) Business <br>and Managemen</p></a>
-                    </div>
-                  </div>
-                </div>
+										<a href>
+											<p>BA (Hons) Hospitality Management
+												<br>
+												(BHM)</p>
+										</a>
+									</div>
+								</div>
+								<div class="col-auto">
+									<div class="text-black p-3 border1" style="--border-color:#2366AA;border-bottom: 8px solid #2366AA">
 
-                <div class="row mt-3">
-                  <div class="col-auto">
-                    <div
-                      class="text-black p-3 text-center d-flex justify-content-start align-items-start border1"
-                      style=" --border-color:#2366AA;border-bottom: 8px solid #2366AA">
+										<a href>
+											<p>BBA (Hons) Business
+												<br>and Managemen</p>
+										</a>
+									</div>
+								</div>
+							</div>
 
-                      <a href="#"><p>BBA (Hons) Business <br>and
-                          Managemen</p></a>
-                    </div>
-                  </div>
-                  <div class="col-auto ">
-                    <div
-                      class="text-black p-3 text-center d-flex justify-content-start align-items-start border1"
-                      style=" --border-color:#886BAE;border-bottom: 8px solid #886BAE">
+							<div class="row mt-3">
+								<div class="col-auto">
+									<div class="text-black p-3 text-center d-flex justify-content-start align-items-start border1" style=" --border-color:#2366AA;border-bottom: 8px solid #2366AA">
 
-                      <a href><p>BA (Hons) Hospitality Management <br>
-                          (BHM)</p></a>
-                    </div>
-                  </div>
-                </div>
+										<a href="#">
+											<p>BBA (Hons) Business
+												<br>and
+												                          Managemen</p>
+										</a>
+									</div>
+								</div>
+								<div class="col-auto ">
+									<div class="text-black p-3 text-center d-flex justify-content-start align-items-start border1" style=" --border-color:#886BAE;border-bottom: 8px solid #886BAE">
 
-              </div>
+										<a href>
+											<p>BA (Hons) Hospitality Management
+												<br>
+												(BHM)</p>
+										</a>
+									</div>
+								</div>
+							</div>
 
-              <div
-                class="col-auto program d-flex flex-column justify-content-end align-items-start simple">
-                <img src="Images/Group 4.svg" alt>
-                <h2>Undergrad <br>Programme</h2>
-                <button type="button" class="button1">Apply Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+						</div>
 
-    <div class="container d-flex">
-      <div class="d-flex  p-3 justify-content-end">
-        <div class="col-auto d-flex flex-column justify-content-end align-items-start simple-form p-5 simple">
-          <h2> Partner <br> Universities</h2>
-          <p>Lorem Ipsum is simply dummy text of the <br>printing and
-            typesetting industry. Lorem Ipsum <br> has.</p>
-          <button type="button" class="button1">Apply Now</button>
+						<div class="col-auto program d-flex flex-column justify-content-end align-items-start simple">
+							<img src="Images/Group 4.svg" alt>
+							<h2>Undergrad
+								<br>Programme</h2>
+							<button type="button" class="button1">Apply Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html></div><div class="container d-flex">
+<div class="d-flex  p-3 justify-content-end">
+	<div class="col-auto d-flex flex-column justify-content-end align-items-start simple-form p-5 simple">
+		<h2>
+			Partner
+			<br>
+			Universities</h2>
+		<p>Lorem Ipsum is simply dummy text of the
+			<br>printing and
+			            typesetting industry. Lorem Ipsum
+			<br>
+			has.</p>
+		<button type="button" class="button1">Apply Now</button>
 
-        </div>
-        <div class="col-auto d-flex card-wrap">
-          <div class="col-auto d-flex flex-column card-value ">
-            <div
-              class="card d-flex flex-column justify-content-center align-items-start"
-              style="background-color: #2E438E; color: white;">
-              <img src="Images/Building.png" alt>
-              <p>University of West London</p>
-            </div>
-            <div
-              class="card d-flex flex-column justify-content-center align-items-start ">
-              <img src="Images/Builiding Color.png" alt>
-              <p>Leeds Beckeett University</p>
-            </div>
-            <div
-              class="card d-flex flex-column justify-content-center align-items-start ">
-              <img src="Images/Builiding Color.png" alt>
-              <p>Keele University</p>
-            </div>
-          </div>
-          <div class="col-5 d-flex flex-column justify-content-end">
-            <div
-              class="long-card d-flex flex-column justify-content-end align-items-start">
-              <img src="Images/Group.svg" alt>
-              <p>Cambridge International Education</p>
-            </div>
-          </div>
+	</div>
+	<div class="col-auto d-flex card-wrap">
+		<div class="col-auto d-flex flex-column card-value ">
+			<div class="card d-flex flex-column justify-content-center align-items-start" style="background-color: #2E438E; color: white;">
+				<img src="Images/Building.png" alt>
+				<p>University of West London</p>
+			</div>
+			<div class="card d-flex flex-column justify-content-center align-items-start ">
+				<img src="Images/Builiding Color.png" alt>
+				<p>Leeds Beckeett University</p>
+			</div>
+			<div class="card d-flex flex-column justify-content-center align-items-start ">
+				<img src="Images/Builiding Color.png" alt>
+				<p>Keele University</p>
+			</div>
+		</div>
+		<div class="col-5 d-flex flex-column justify-content-end">
+			<div class="long-card d-flex flex-column justify-content-end align-items-start">
+				<img src="Images/Group.svg" alt>
+				<p>Cambridge International Education</p>
+			</div>
+		</div>
 
-        </div>
+	</div>
 
-      </div>
-    </div>
-
-    <div class="image" style="position: relative;">
-      <div class="gradient-color">
-
-      </div>
-      <div
-        class="text-image d-flex flex-column justify-content-center align-items-center ">
-        <h1>Global Experience</h1>
-        <button type="button" class="button1">Explore More</button>
-
-      </div>
-      <!-- <img src="Images/Rectangle 16.png" alt="">   -->
-      <img src="Images/image 7.png" alt class="img-fluid w-100 "
-        style="object-fit:fill;">
-    </div>
-
-    <div class="container position-relative p-3">
-      <div class="arrow-line position-absolute">
-        <img src="Images/arrow.svg" alt>
-      </div>
-      <div class="text-value d-flex  align-items-center">
-        <div class="text1 simple">
-          <h2> News & Events</h2>
-          <p class="text-justify">Lorem Ipsum is simply dummy text of the
-            printing and typesetting <br>
-            industry. Lorem Ipsum has.</p>
-        </div>
-        <div class="button-line1 position-absolute">
-          <button type="button" class="button1">View All</button>
-        </div>
-
-      </div>
-
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <div class="card card-details">
-
-            <div class="position-relative">
-              <img src="Images/datascience.png" class="card-img-top"
-                alt="AI Dengue">
-              <div class="card-date">
-                07 <span>Sep</span>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Could AI Be the Answer to the Dengue
-                Epidemic?</h5>
-              <p class="card-text text-muted">Lorem Ipsum is simply dummy text
-                of the printing and typesetting industry.</p>
-              <a href="#" class="news-badge">News</a>
-            </div>
-          </div>
-
-        </div>
-        <div class="item"> <div class="item">
-            <div class="card card-details">
-
-              <div class="position-relative">
-                <img src="Images/datascience.png" class="card-img-top"
-                  alt="AI Dengue">
-                <div class="card-date">
-                  07 <span>Sep</span>
-                </div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Could AI Be the Answer to the Dengue
-                  Epidemic?</h5>
-                <p class="card-text ">Lorem Ipsum is simply dummy text
-                  of the printing and typesetting industry.</p>
-                <a href="#" class="news-badge">News</a>
-              </div>
-            </div>
-
-          </div></div>
-        <div class="item"> <div class="item">
-            <div class="card card-details">
-              <div class="position-relative">
-                <img src="Images/datascience.png" class="card-img-top"
-                  alt="AI Dengue">
-                <div class="card-date">
-                  07 <span>Sep</span>
-                </div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Could AI Be the Answer to the Dengue
-                  Epidemic?</h5>
-                <p class="card-text text-muted">Lorem Ipsum is simply dummy text
-                  of the printing and typesetting industry.</p>
-                <a href="#" class="news-badge">News</a>
-              </div>
-            </div>
-
-          </div></div>
-        <div class="item"> <div class="item">
-            <div class="card card-details">
-              <div class="position-relative">
-                <img src="Images/datascience.png" class="card-img-top"
-                  alt="AI Dengue">
-                <div class="card-date">
-                  07 <span>Sep</span>
-                </div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Could AI Be the Answer to the Dengue
-                  Epidemic?</h5>
-                <p class="card-text text-muted">Lorem Ipsum is simply dummy text
-                  of the printing and typesetting industry.</p>
-                <a href="#" class="news-badge">News</a>
-              </div>
-            </div>
-
-          </div></div>
-
-      </div>
-    </div>
-
-    <!-- <div class="container-fluid slide position-relative">
-<img src="Images/Quotes.svg" alt="" class="position-absolute image-slide">
-
-<h2>Stories And <br>
-Experiences</h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry. Lorem Ipsum has.</p>
+</div></div><div class="image" style="position: relative;">
+<div class="gradient-color"></div>
+<div class="text-image d-flex flex-column justify-content-center align-items-center ">
+	<h1>Global Experience</h1>
+	<button type="button" class="button1">Explore More</button>
 
 </div>
-</div> -->
-    <div class="row ">
+<!-- <img src="Images/Rectangle 16.png" alt="">   -->
+<img src="Images/image 7.png" alt class="img-fluid w-100 " style="object-fit:fill;"></div><div class="container-fluid  position-relative p-3 event">
+<div class="container p-5">
+	<div class="arrow-line1 position-absolute">
+		<img src="Images/Quotes.svg" alt>
+	</div>
+	<div class="d-flex  align-items-center">
+		<div class="text1 simple">
+			<h2 style="color: white;" ;>Stories And
+				<br>
+				Experiences</h2>
+			<p style="color: white;">Lorem Ipsum is simply dummy text of the
+				            printing and typesetting
+				<br>
+				industry. Lorem Ipsum has.</p>
+		</div>
 
-      <div class="col-7  ">
-        <img src="Images/image_dd.png" alt class="w-100">
-      </div>
-      <div
-        class="col-5 first-bar d-flex flex-column justify-content-center align-items-center p-0">
 
-        <p>Ready to take <br>the next step?</p>
+	</div>
 
-        <div class="button-line">
-          <button class="button1">Apply Now </button>
-          <button class="button1">Contact Us</button>
-        </div>
+	<div class="owl-carousel owl-theme">
 
-      </div>
-    </div>
-    <footer class="container-fluid">
-      <div
-        class="container-lg d-flex align-items-center  justify-content-between position-relative top-10">
-        <div class="description p-3">
-          <h2>The British College</h2>
-          <p>We are a world-class college in Nepal that <br> offers British and
-            international qualifications <br> that equip our graduates with the
-            knowledge,<br> skills, and values they need to become creative <br>
-            entrepreneurs and achieve success in the <br> global job market.</p>
-        </div>
-        <div class="quick-links ">
-          <h2> Quick Links</h2>
-          <div class="nav-link d-flex flex-column p-2 ">
+		<div class="item">
 
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Programs</a>
-            <a href="#">Contact</a>
+			<div class="testimonial-card1 position-relative">
+				<div class="testimonial-inner d-flex align-items-start">
+					<img src="Images/Student.jpg" alt="Student Photo">
+					<div style="--font-color:#16a085;">
+						<p class="student-name mb-0">Yuxu Chai</p>
+						<p class="student-role mb-2">Student, EMBA</p>
+						<p class="mb-0">
+							<span class="quote-mark position-absolute">“</span>
+							Throughout my time at the College, I experienced top quality, hands-on teaching that helped me to think more professionally and understand how to use my expertise in my work.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+
+			<div class="testimonial-card1 position-relative">
+				<div class="testimonial-inner d-flex align-items-start">
+					<img src="Images/Student.jpg" alt="Student Photo">
+					<div style="--font-color:#BC3D58;">
+						<p class="student-name mb-0">Yuxu Chai</p>
+						<p class="student-role mb-2">Student, EMBA</p>
+						<p class="mb-0">
+							<span class="quote-mark position-absolute">“</span>
+							Throughout my time at the College, I experienced top quality, hands-on teaching that helped me to think more professionally and understand how to use my expertise in my work.
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="item">
+			<div class="testimonial-card1 position-relative">
+				<div class="testimonial-inner d-flex align-items-start">
+					<img src="Images/Student.jpg" alt="Student Photo">
+					<div style="--font-color:#16a085;">
+						<p class="student-name mb-0">Yuxu Chai</p>
+						<p class="student-role mb-2">Student, EMBA</p>
+						<p class="mb-0">
+							<span class="quote-mark position-absolute">“</span>
+							Throughout my time at the College, I experienced top quality, hands-on teaching that helped me to think more professionally and understand how to use my expertise in my work.
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="item">
+			<div class="testimonial-card1 position-relative">
+				<div class="testimonial-inner d-flex align-items-start">
+					<img src="Images/Student.jpg" alt="Student Photo">
+					<div style="--font-color:#16a085;">
+						<p class="student-name mb-0">Yuxu Chai</p>
+						<p class="student-role mb-2">Student, EMBA</p>
+						<p class="mb-0">
+							<span class="quote-mark position-absolute">“</span>
+							Throughout my time at the College, I experienced top quality, hands-on teaching that helped me to think more professionally and understand how to use my expertise in my work.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div></div><div class="container position-relative p-3">
+<div class="arrow-line position-absolute">
+	<img src="Images/arrow.svg" alt>
+</div>
+<div class="text-value d-flex  align-items-center">
+	<div class="text1 simple">
+		<h2>
+			News & Events</h2>
+		<p class="text-justify">Lorem Ipsum is simply dummy text of the
+			            printing and typesetting
+			<br>
+			industry. Lorem Ipsum has.</p>
+	</div>
+	<div class="button-line1 position-absolute">
+		<button type="button" class="button1">View All</button>
+	</div>
+
+</div>
+
+<div class="owl-carousel owl-theme">
+	<div class="item">
+		<div class="card card-details">
+
+			<div class="position-relative">
+				<img src="Images/datascience.png" class="card-img-top" alt="AI Dengue">
+				<div class="card-date">
+					07
+					<span>Sep</span>
+				</div>
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">Could AI Be the Answer to the Dengue
+					                Epidemic?</h5>
+				<p class="card-text text-muted">Lorem Ipsum is simply dummy text
+					                of the printing and typesetting industry.</p>
+				<a href="#" class="news-badge">News</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="item">
+		<div class="item">
+			<div class="card card-details">
+
+				<div class="position-relative">
+					<img src="Images/datascience.png" class="card-img-top" alt="AI Dengue">
+					<div class="card-date">
+						07
+						<span>Sep</span>
+					</div>
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Could AI Be the Answer to the Dengue
+						                  Epidemic?</h5>
+					<p class="card-text ">Lorem Ipsum is simply dummy text
+						                  of the printing and typesetting industry.</p>
+					<a href="#" class="news-badge">News</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="item">
+		<div class="item">
+			<div class="card card-details">
+				<div class="position-relative">
+					<img src="Images/datascience.png" class="card-img-top" alt="AI Dengue">
+					<div class="card-date">
+						07
+						<span>Sep</span>
+					</div>
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Could AI Be the Answer to the Dengue
+						                  Epidemic?</h5>
+					<p class="card-text text-muted">Lorem Ipsum is simply dummy text
+						                  of the printing and typesetting industry.</p>
+					<a href="#" class="news-badge">News</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="item">
+		<div class="item">
+			<div class="card card-details">
+				<div class="position-relative">
+					<img src="Images/datascience.png" class="card-img-top" alt="AI Dengue">
+					<div class="card-date">
+						07
+						<span>Sep</span>
+					</div>
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Could AI Be the Answer to the Dengue
+						                  Epidemic?</h5>
+					<p class="card-text text-muted">Lorem Ipsum is simply dummy text
+						                  of the printing and typesetting industry.</p>
+					<a href="#" class="news-badge">News</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div></div><!-- <div class="container-fluid slide position-relative">
+	<img src="Images/Quotes.svg" alt="" class="position-absolute image-slide">
+	
+	<h2>Stories And <br>
+	Experiences</h2>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry. Lorem Ipsum has.</p>
+	
+	</div>
+	</div> --><div class="row ">
+
+<div class="col-7  ">
+	<img src="Images/image_dd.png" alt class="w-100">
+</div>
+<div class="col-5 first-bar d-flex flex-column justify-content-center align-items-center p-0">
+
+	<p>Ready to take
+		<br>the next step?</p>
+
+	<div class="button-line">
+		<button class="button1">Apply Now
+		</button>
+		<button class="button1">Contact Us</button>
+	</div>
+
+</div>
+</div>
+<!--FOOTER -->
+<footer class="container-fluid">
+<div class="container d-flex justify-content-between position-relative top-10">
+	<div class="full-description d-flex flex-column gap-5">
+		<div class="first-links d-flex gap-4">
+			<div class="description p-3">
+				<h2>The British College</h2>
+				<p>We are a world-class college in Nepal that
+					<br>
+					offers British and
+					            international qualifications
+					<br>
+					that equip our graduates with the
+					            knowledge,<br>
+					skills, and values they need to become creative
+					<br>
+					entrepreneurs and achieve success in the
+					<br>
+					global job market.</p>
+			</div>
+			<div class="quick-links ">
+				<h2>
+					Quick Links</h2>
+				<div class="nav-link d-flex flex-column p-2 ">
+
+					<a href="#">Home</a>
+					<a href="#">About Us</a>
+					<a href="#">Programs</a>
+					<a href="#">Contact</a>
+				</div>
+			</div>
+			<div class="quick-links">
+				<h2>
+					Quick Links</h2>
+				<div class="nav-link d-flex flex-column p-2">
+
+					<a href="#">Home</a>
+					<a href="#">About Us</a>
+					<a href="#">Programs</a>
+					<a href="#">Contact</a>
+				</div>
+			</div>
+		</div>
+		<div class=" gap-4 d-flex text-light p-5">
+			<i class="fa-brands fa-facebook icons-value d-flex justify-content-center align-items-center" style="background-color: #2366AA;"></i>
+			<i class="fa-brands fa-instagram icons-value d-flex justify-content-center align-items-center" style="background-color: red;"></i>
+			<i class="fa-brands fa-x-twitter icons-value d-flex justify-content-center align-items-center" style="background-color: #1DA1F2;"></i>
+			<i class="fa-brands fa-linkedin icons-value d-flex justify-content-center align-items-center" style="background-color:#0274B3"></i>
+			<i class="fa-brands fa-youtube icons-value d-flex justify-content-center align-items-center" style="background-color: #FF0000;"></i>
+
+		</div>
+
+		<div class="newsletter">
+			<h2>Subscribe  Newsletters</h2>
+			<form action="#">
+				<div class="row gap-3">
+					<input type="email" placeholder="Your email address" class="col-8 p-3">
+					<button type="submit" class="col-3 button1 p-0 m-0">Subscribe</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="map p-3 mt-3">
+		<img src="Images/map.svg" alt="" style="height: 500px;">
+	</div>
+</div>
+</footer>
+<!--FOOTER -->
+
+
+<div class="container-fluid ">
+	  <div class="container">
+        <div class="row bottom-footer justify-content-center">
+          <div class="contact-number col-6">
+            <i class="fa-solid fa-phone"></i>
+            +977 9867396900
           </div>
-        </div>
-        <div class="quick-links">
-          <h2> Quick Links</h2>
-          <div class="nav-link d-flex flex-column p-2">
+           <div class="college-logo col-6">
+            <img src="Images/uwe.png" alt="" class="">
+            <img src="Images/leeds.jpeg" alt="">
+            <img src="Images/kellee.png" alt="">
+            <img src="Images/acca.png" alt="">
+            <img src="Images/acca.png" alt="">
+            <img src="Images/cambridge.png" alt="">
 
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Programs</a>
-            <a href="#">Contact</a>
+         </div>
+        </div>
+
+            <div class="row bottom-footer justify-content-center">
+          <div class="contact-number col-6">
+         @2023 terms and conditions
           </div>
+        
         </div>
-        <div class="map p-3">
-          <img src="Images/map.svg" alt>
-        </div>
+   
+    </div>  
 
-      </div>
+</div>
 
-      <div class="socialmedia d-flex ml-1 ">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-tiktok"></i>
-        <i class="fa-brands fa-twitter"></i>
-
-      </div>
-
-      <div class="newsletter">
-        <h2>Subscribe to our Newsletter</h2>
-        <form action="#">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </footer>
-    <script>
+      <script>
 $('.owl-carousel').owlCarousel({
-    loop:false,
-    margin:10,
-    nav:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
 
-        }
-    }
-})
-</script>
-  </body>
+	loop: false,
+	margin: 10,
+	nav: false,
+	responsive: {
 
-</html>
+		0: {
+
+			items: 1
+
+		},
+		600: {
+
+			items: 3
+
+		},
+		1000: {
+
+			items: 3
+
+
+
+		}
+	}
+
+})</script></body></html>
