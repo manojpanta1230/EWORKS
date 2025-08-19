@@ -16,17 +16,16 @@ body .first-row {
   flex-wrap: nowrap;
   overflow-x: hidden;
 }
-body .btn {
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  border-radius: 0;
-  margin-top: 10px;
+
+.top-bar {
+  height: 12rem;
+  width: 22rem;
 }
 
 .row .card {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 3%;
+  bottom: 6%;
 }
 
 nav {
@@ -53,6 +52,9 @@ nav li {
   top: 0;
 }
 
+.text {
+  z-index: 1000;
+}
 .text img {
   position: relative;
   top: -29%;
@@ -73,6 +75,9 @@ nav li {
   gap: 10px;
   color: #2E438E;
   border-radius: 0;
+}
+.card span {
+  font-size: 25px;
 }
 
 .card-wrap {
@@ -265,7 +270,11 @@ nav li {
 
 .arrow {
   top: 0;
-  right: 0;
+  left: -21%;
+  transform: rotate(-180deg);
+}
+.arrow img {
+  height: 100vh;
 }
 
 .slide {
@@ -300,7 +309,7 @@ footer {
 }
 
 .quick-links .nav-link {
-  gap: 20px;
+  gap: 10px;
 }
 .quick-links .nav-link a {
   text-decoration: none;
@@ -327,6 +336,10 @@ footer {
   text-align: center;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.apply {
+  background-color: #2E438E;
 }
 
 .card-date span {
@@ -363,12 +376,24 @@ footer {
 
 .text1 {
   z-index: 1000;
-  margin-bottom: 90px;
 }
 
 .arrow1 {
   height: 190vh;
   left: -41%;
+}
+
+.svg {
+  fill: #17A8DF;
+}
+
+.arrow2 {
+  top: -4%;
+  left: -35%;
+}
+.arrow2 img {
+  transform: rotate(-180deg);
+  height: 100vh;
 }
 
 .event {
@@ -377,8 +402,6 @@ footer {
 }
 
 .testimonial-card1 {
-  width: 352px;
-  height: 196px;
   width: 392px;
   max-height: 212px;
 }
