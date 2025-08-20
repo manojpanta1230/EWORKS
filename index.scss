@@ -93,7 +93,9 @@ body {
 }
 
 
-
+.height1{
+    height: 100px;
+}
 
 nav {
     display: flex;
@@ -110,6 +112,9 @@ nav {
         gap: base.$fixed_margin + 5px;
         z-index: 1000;
 
+    }
+    a{
+        text-decoration: none;
     }
 
     li {
@@ -160,9 +165,9 @@ nav {
     color: base.$primary-color;
     border-radius: 0;
 
-span{
-    font-size: base.$font_size + 10px;
-}
+    span {
+        font-size: base.$font_size + 10px;
+    }
 
 }
 
@@ -236,15 +241,27 @@ span{
         margin-top: base.$fixed_margin;
     }
 }
+.arrow3{
+        right: -17%;
+    top: -96%;
+   img{
+    height: 55vh;
+   }
+}
 
-.simple-form {
-
-
-    h1 {
+.simple-form1 {
+z-index: 1000;
+top: 25%;
+    left: 9%;
+    h2 {
         font-weight: base.$font_weight + 300;
         font-size: base.$font_size + 33px;
         line-height: 100%;
         color: base.$primary_color;
+    }
+    .button1{
+        border-color: base.$secondary-color;
+        
     }
 }
 
@@ -300,7 +317,11 @@ span{
 .image-text {
     color: base.$secondary-color;
 }
-
+.image-top{
+    img{
+        height: 100vh;
+    }
+}
 .testimonial-card {
     background-color: #f8f9fa;
     border-left: 5px solid #0d6efd;
@@ -329,7 +350,7 @@ span{
     border-bottom: 8px solid base.$primary-color;
 }
 
-.nav-pills .nav-link {
+.navtab .nav-link {
     border-radius: 0;
     background: transparent;
     color: gray;
@@ -337,7 +358,7 @@ span{
 }
 
 
-.nav-pills .nav-link.active {
+.navtab .nav-link.active {
     color: base.$primary-color;
     background: transparent;
     border-bottom: 2px solid base.$primary-color;
@@ -389,7 +410,7 @@ span{
     transform: rotate(-180deg);
 
     img {
-        height:100vh;
+        height: 100vh;
 
     }
 
@@ -513,21 +534,24 @@ footer {
 }
 
 .arrow1 {
-    height: 190vh;
-    left: -41%;
+   height: 189vh;
+    left: -53%;
+    top: -45%;
 
 
 }
 
-.svg{
+.svg {
     fill: base.$light-blue;
 }
-.arrow2{
-       top: -4%;
+
+.arrow2 {
+    top: -4%;
     left: -35%;
-    img{
-            transform: rotate(-180deg);
-    height: 100vh;
+
+    img {
+        transform: rotate(-180deg);
+        height: 100vh;
     }
 }
 
@@ -539,7 +563,7 @@ footer {
 
 .testimonial-card1 {
 
-    
+
     width: 392px;
     max-height: 212px;
 }
@@ -644,3 +668,4 @@ footer {
         width: fit-content;
     }
 }
+
