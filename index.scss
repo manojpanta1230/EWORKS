@@ -669,3 +669,43 @@ footer {
     }
 }
 
+.advisory-card{
+        background:base.$light-gray;
+    width: 252px;
+    height: 312px;
+    filter: drop-shadow(2px 4px 6px base.$gray);
+    img{
+            height: 232px;
+    width: 204px;
+    }
+}
+
+.navtab1{
+    ul{
+        li{
+            border: 1px solid base.$gray;
+        }
+        .nav-link{
+            color: base.$gray;
+        }
+    }
+  #pills-tab .active {
+     border-radius: 0;
+     background-color: base.$light-blue;
+     color: base.$secondary-color;
+    
+}}
+
+.image-height{
+    height: 292px;
+    width: 205px;
+    object-fit: cover;
+}
+.image{
+    p{
+        position:absolute;
+    top: 85%;
+    left: 25%;
+    color: white;
+    }
+}
