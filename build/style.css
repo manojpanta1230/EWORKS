@@ -556,4 +556,16 @@ footer {
   color: white;
 }
 
+.partner-height {
+  height: 35px;
+}
+
+.full-image {
+  border: 1px solid;
+}
+
+.image-logo {
+  height: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */
