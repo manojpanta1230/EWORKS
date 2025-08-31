@@ -93,7 +93,7 @@ body {
 }
 
 
-.height1{
+.height1 {
     height: 100px;
 }
 
@@ -113,7 +113,8 @@ nav {
         z-index: 1000;
 
     }
-    a{
+
+    a {
         text-decoration: none;
     }
 
@@ -241,27 +242,31 @@ nav {
         margin-top: base.$fixed_margin;
     }
 }
-.arrow3{
-        right: -17%;
+
+.arrow3 {
+    right: -17%;
     top: -96%;
-   img{
-    height: 55vh;
-   }
+
+    img {
+        height: 55vh;
+    }
 }
 
 .simple-form1 {
-z-index: 1000;
-top: 25%;
+    z-index: 1000;
+    top: 25%;
     left: 9%;
+
     h2 {
         font-weight: base.$font_weight + 300;
         font-size: base.$font_size + 33px;
         line-height: 100%;
         color: base.$primary_color;
     }
-    .button1{
+
+    .button1 {
         border-color: base.$secondary-color;
-        
+
     }
 }
 
@@ -317,11 +322,13 @@ top: 25%;
 .image-text {
     color: base.$secondary-color;
 }
-.image-top{
-    img{
+
+.image-top {
+    img {
         height: 100vh;
     }
 }
+
 .testimonial-card {
     background-color: #f8f9fa;
     border-left: 5px solid #0d6efd;
@@ -534,7 +541,7 @@ footer {
 }
 
 .arrow1 {
-   height: 189vh;
+    height: 189vh;
     left: -53%;
     top: -45%;
 
@@ -669,58 +676,61 @@ footer {
     }
 }
 
-.advisory-card{
-        background:base.$light-gray;
+.advisory-card {
+    background: base.$light-gray;
     width: 252px;
-    height: 312px;
-    filter: drop-shadow(2px 4px 6px base.$gray);
-    img{
-            height: 232px;
-    width: 204px;
+    height: 334px;
+
+    img {
+        height: 232px;
+        width: 204px;
     }
 }
 
-.navtab1{
-    ul{
-        li{
+.navtab1 {
+    ul {
+        li {
             border: 1px solid base.$gray;
         }
-        .nav-link{
+
+        .nav-link {
             color: base.$gray;
         }
     }
-  #pills-tab .active {
-     border-radius: 0;
-     background-color: base.$light-blue;
-     color: base.$secondary-color;
-    
-}}
 
-.image-height{
+    #pills-tab .active {
+        border-radius: 0;
+        background-color: base.$light-blue;
+        color: base.$secondary-color;
+
+    }
+}
+
+.image-height {
     height: 292px;
     width: 205px;
     object-fit: cover;
 }
-.image{
-    p{
-        position:absolute;
-    top: 85%;
-    left: 25%;
-    color: white;
+
+.image {
+    p {
+        position: absolute;
+        top: 85%;
+        left: 25%;
+        color: white;
     }
 }
+
 .partner-height {
     height: 35px;
 
 }
-.full-image{
-    
-        border: 1px solid ;
-    }
 
-.image-logo{
-    height: 100px;
+.full-image {
+
+    border: 1px solid;
 }
 
-  
-  
+.image-logo {
+    height: 100px;
+}

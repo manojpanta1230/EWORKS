@@ -523,8 +523,7 @@ footer {
 .advisory-card {
   background: rgba(16, 16, 17, 0.0392156863);
   width: 252px;
-  height: 312px;
-  filter: drop-shadow(2px 4px 6px gray);
+  height: 334px;
 }
 .advisory-card img {
   height: 232px;
