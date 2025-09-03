@@ -41,9 +41,9 @@
         <title>Advisory Team</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container position-relative">
             <nav>
-                <!-- <div class="vector"><img src="Vector.svg" alt="" ></div> -->
+				<div class="position-absolute top-0 end-0"><img src="Vector.svg" alt="" ></div>
                 <a href="index.html"><img src="Images/Blacklogo.png"
                         alt="Eworks Logo"></a>
                 <ul>
@@ -55,14 +55,31 @@
                     <li>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </li>
-                    <li>
-                        <i class="fa-solid fa-bars"></i>
-                    </li>
+             <li>
+						<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Welcome</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+						
+					</li>
 
                 </ul>
             </nav>
 
-            <p>Home <span class="text-secondary"> /Team / Rajan K</span></p>
+         <nav aria-label="breadcrumb" class="p-2">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Team</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Rajan Kandel</li>
+  </ol>
+</nav>
 
             <div class="d-flex gap-4">
                 <div class="icons-card">
@@ -90,10 +107,10 @@
 
                     </div>
                 </div>
-                <div class="simple">
+                <div class="simple z-1">
                     <h2>Rajan Kandel</h2>
-                    <p class="text-secondary"> CEO and Founder</p>
-                    <section>Rajen Kandel holds an MBA from University College
+                    <p class="text-secondary "> CEO and Founder</p>
+                    <section  >Rajen Kandel holds an MBA from University College
                         London (UCL). He established his first College in the
                         UK, before then founding The British College in 2012.
                         And he has now set up The British Education Group, which

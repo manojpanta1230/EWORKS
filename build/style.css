@@ -22,12 +22,6 @@ body .first-row {
   width: 22rem;
 }
 
-.row .card {
-  position: absolute;
-  right: 3%;
-  bottom: 6%;
-}
-
 .height1 {
   height: 100px;
 }
@@ -41,7 +35,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 35px;
   z-index: 1000;
 }
 nav a {
@@ -52,11 +46,6 @@ nav li {
   color: #2E438E;
   size: 16px;
   font-weight: 400;
-}
-
-.vector {
-  position: absolute;
-  top: 0;
 }
 
 .text {
@@ -106,7 +95,7 @@ nav li {
   gap: 20px;
 }
 
-.simple h2 {
+.simple h2, .simple span {
   font-weight: 700;
   font-size: 48px;
   line-height: 100%;
@@ -169,10 +158,10 @@ nav li {
 }
 
 .button1 {
-  border: 1px solid #2E438E;
+  color: #2E438E;
   padding: 7px;
   background-color: transparent;
-  color: #2E438E;
+  border: 1px solid #FFFFFF;
 }
 
 .partner {
@@ -190,15 +179,18 @@ nav li {
   left: 0;
 }
 
-.text-image {
+.text_image {
   position: absolute;
   left: 35%;
   top: 10%;
 }
-.text-image h1 {
+.text_image h1 {
   color: #2E438E;
   font-weight: 600;
   font-size: 48px;
+}
+.text_image .button1 {
+  border-color: #2E438E;
 }
 
 .slide {
@@ -288,13 +280,6 @@ nav li {
   height: 59vh;
 }
 
-.button1 {
-  color: #2E438E;
-  border: 1px solid #2E438E;
-  border-radius: 0;
-  margin-top: 10px;
-}
-
 .arrow {
   top: 0;
   left: -21%;
@@ -322,7 +307,6 @@ nav li {
 
 .button-line .button1 {
   color: #FFFFFF;
-  border: 1px solid #FFFFFF;
 }
 .button-line .button1:hover {
   background-color: rgb(33.5212765957, 48.8244680851, 103.4787234043);
@@ -331,7 +315,7 @@ nav li {
 
 footer {
   background-color: #2E438E;
-  height: 100vh;
+  padding: 50px 0px;
   color: #FFFFFF;
 }
 
@@ -350,8 +334,8 @@ footer {
 
 .card-details {
   position: relative;
-  width: 20rem;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .card-date {
@@ -426,7 +410,7 @@ footer {
 
 .event {
   background-color: #2E438E;
-  height: 100vh;
+  padding: 80px 0px;
 }
 
 .testimonial-card1 {
@@ -544,7 +528,7 @@ footer {
 
 .image-height {
   height: 292px;
-  width: 205px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -559,12 +543,104 @@ footer {
   height: 35px;
 }
 
-.full-image {
-  border: 1px solid;
-}
-
 .image-logo {
   height: 100px;
+}
+
+.contact {
+  background-color: #D1E7EF;
+  min-height: 524px;
+}
+
+input, select {
+  border: none;
+  border-bottom: 1px solid rgb(186, 186, 186);
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(255, 137, 204);
+}
+
+#cars:focus {
+  outline: none;
+}
+
+.height2 {
+  height: 450px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.height2 section {
+  font-weight: 500;
+  font-size: 21px;
+  color: #2E438E;
+}
+
+.height2::-webkit-scrollbar {
+  width: 3px;
+  background-color: #2E438E;
+}
+
+.height2::-webkit-scrollbar-track {
+  background-color: #cdcdcd;
+  border-radius: 2px;
+}
+
+.height2::-webkit-scrollbar-thumb {
+  background-color: #2E438E;
+}
+
+.pagination1 a {
+  border: none;
+  color: gray;
+}
+.pagination1 .active {
+  border-radius: 50%;
+  background-color: rgba(46, 67, 142, 0.6);
+}
+
+.back {
+  background-color: #2E438E;
+}
+
+.item img {
+  width: 255px;
+}
+
+.para {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.img-slider .owl-dots {
+  display: none;
+}
+.img-slider .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+.full-image .col {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.full-image .col:last-child {
+  border-right: none !important;
+}
+
+.full-image .col:nth-child(n) {
+  border-bottom: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+}
+
+.image1 {
+  top: -200px;
+  right: 232px;
 }
 
 /*# sourceMappingURL=style.css.map */

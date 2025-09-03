@@ -41,76 +41,92 @@
     <title>Course Page</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container z-1000 position-relative">
 <nav>
-				<!-- <div class="vector"><img src="Vector.svg" alt="" ></div> -->
+				<div class="position-absolute top-0 end-0"><img src="Vector.svg" alt="" ></div>
 				<img src="Images/Blacklogo.png" alt="Eworks Logo">
 				<ul>
-					<a href=""><li>About</li></a>
+					<a href="aboutus.html"><li>About</li></a>
 					<a href="course.html"><li>Courses</li></a>
 					<a href="news.html"><li>News</li></a>
-					<a href=""><li>Gallery</li></a>
-					<a href=""><li>Contact</li></a>
+					<a href="gallery.html"><li>Gallery</li></a>
+					<a href="contact_us.html"><li>Contact</li></a>
 					<li>
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</li>
-					<li>
-						<i class="fa-solid fa-bars"></i>
-					</li>
+				<li>
+						<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Welcome</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+						
+					</li>
 				</ul>
 			</nav>
         </div>
-        <div class="container p-3 ">
-            <p>Home <span class="text-secondary"> /Gallery</span></p>
-        </div>
+
  <div class="container">
+	   <nav aria-label="breadcrumb" class="p-2">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+  </ol>
+</nav>
     <div class="simple">
     <h2 >TBC Gallery</h2>
     </div>
-    <div class="gallery d-flex flex-column gap-4 mt-4">
- <div class="row  gap-3">
-    <div class="image position-relative col-auto object-fit-cover">
+	<div class="row gap-3">
+    <div class="row ">
+ 
+    <div class="image position-relative col object-fit-cover">
       
         <img src="Images/Gallery/bmc.jpg" alt="" class="image-height">
         <p class="m-0">TBC Intra Sports</p>
     </div>
-<div class="image position-relative col-auto">
+<div class="image position-relative col object-fit-cover">
       
         <img src="Images/Gallery/1.jpg" alt="" class="image-height">
         <p class="m-0">TBC Intra Sports</p>
     </div>
-<div class="image position-relative col-auto">
-      
+<div class="image position-relative col object-fit-cover">
+
         <img src="Images/Gallery/2.jpg" alt="" class="image-height">
         <p class="m-0">TBC Intra Sports</p>
     </div>
-<div class="image position-relative col-auto">
+<div class="image position-relative col">
 
         <img src="Images/Gallery/3.jpg" alt="" class="image-height">
         <p class="m-0">TBC Intra Sports</p>
     </div>
 
-    </div>
+</div>
 
 
- <div class="row  gap-3">
-    <div class="image position-relative col-auto">
+ <div class="row">
+
+    <div class="image position-relative col-3">
       
-        <img src="Images/Gallery/4.jpg" alt="" class="image-height">
+        <img src="Images/Gallery/4.jpg" alt="" class="image-height img-fluid">
         <p class="m-0">TBC Intra Sports</p>
     </div>
-<div class="image position-relative col-auto">
-      
-        <img src="Images/Gallery/5.jpg" alt="" class="image-height">
+<div class="image position-relative col-3">
+
+        <img src="Images/Gallery/5.jpg" alt="" class="image-height img-fluid">
         <p class="m-0">TBC Intra  Sports</p>
     </div>
-<div class="image position-relative col-auto">
-      
-        <img src="Images/Gallery/6.jpg" alt="" class="image-height">
+<div class="image position-relative col-3">
+
+        <img src="Images/Gallery/6.jpg" alt="" class="image-height img-fluid">
         <p class="m-0">TBC Intra  Sports</p>
     </div>
-<div class="image position-relative col-auto">
+<div class="image position-relative col-3">
 
         <img src="Images/Gallery/7.jpg" alt="" class="image-height">
         <p class="m-0">TBC Intra  Sports</p>
@@ -119,30 +135,30 @@
     </div>
 
 
-     <div class="row gap-3">
-    <div class="image position-relative col-auto">
+     <div class="row">
+    <div class="image position-relative col-3">
       
         <img src="Images/Gallery/kti.jpg" alt="" class="image-height">
         <p class="m-0">TBC Intra  Sports</p>
     </div>
-<div class="image position-relative col-auto">
+<div class="image position-relative col-3">
       
         <img src="Images/Gallery/reshamdai.png" alt="" class="image-height">
         <p class="m-0">TBC Intra  Sports</p>
     </div>
-<div class="image position-relative col-auto">
+<div class="image position-relative col-3">
       
         <img src="Images/Gallery/8.jpg" alt="" class="image-height">
         <p class="m-0">TBC Intra  Sports</p>
     </div>
-<div class="image position-relative col-auto">
+<div class="image position-relative col-3">
 
         <img src="Images/Gallery/9.jpg" alt="" class="image-height">
         <p class="m-0">TBC Intra  Sports</p>
     </div>
 
     </div>
-
+</div>
 </div>
  </div>
      
