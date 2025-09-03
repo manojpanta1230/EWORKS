@@ -267,7 +267,7 @@ nav {
     color: base.$primary-color;
     padding: base.$fixed_margin - 3px;
     background-color: transparent;
-    border: 1px solid base.$secondary-color;
+    border: 1px solid base.$primary-color;
 
 }
 
@@ -437,6 +437,7 @@ nav {
 .button-line {
     .button1 {
         color: base.$secondary-color;
+        border: 1px solid base.$secondary-color;
 
         &:hover {
             background-color: darken(base.$primary-color, 10%);

@@ -161,7 +161,7 @@ nav li {
   color: #2E438E;
   padding: 7px;
   background-color: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #2E438E;
 }
 
 .partner {
@@ -307,6 +307,7 @@ nav li {
 
 .button-line .button1 {
   color: #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
 .button-line .button1:hover {
   background-color: rgb(33.5212765957, 48.8244680851, 103.4787234043);
