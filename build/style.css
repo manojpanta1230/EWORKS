@@ -645,11 +645,25 @@ input:focus {
 
 .image1 {
   top: -200px;
-  right: 232px;
+  right: 138px;
 }
 
 .side-bar {
   background-color: rgba(16, 16, 17, 0.0392156863);
+}
+.side-bar a {
+  text-decoration: none;
+  width: 100%;
+}
+.side-bar .nav-link {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+  color: gray;
+}
+.side-bar .nav-link.active {
+  background-color: #17A8DF;
 }
 
 .text-size {
@@ -657,6 +671,13 @@ input:focus {
   font-weight: 300;
   letter-spacing: 1px;
   text-align: justify;
+}
+
+.first-col p {
+  font-size: 60px;
+  font-weight: 900;
+  color: rgba(46, 67, 142, 0.5019607843);
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

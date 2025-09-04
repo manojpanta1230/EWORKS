@@ -831,11 +831,26 @@ width: 255px;
 
 .image1{
   top: -200px;
-    right: 232px;
+    right:138px;
 }
 
 .side-bar{
     background-color: #1010110A;
+    a{
+      text-decoration: none;
+      
+      width: 100%;
+    }
+    .nav-link {
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid gray;
+        border-radius: 0;
+        color: base.$gray;
+    }
+    .nav-link.active{
+        background-color:base.$light-blue
+    }
 }
 
 .text-size{
@@ -843,4 +858,13 @@ width: 255px;
     font-weight: 300;
     letter-spacing: 1px;
     text-align: justify;
+}
+
+.first-col {
+    p{
+        font-size: base.$font-size +45px;
+        font-weight: base.$font-weight +500;
+        color: #2E438E80;
+        text-align: center;
+    }
 }
