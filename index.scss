@@ -191,7 +191,10 @@ nav {
         line-height: 100%;
         color: base.$primary_color;
     }
-    
+    .para1{
+        font-size: base.$font-size +5px;
+        font-weight: base.$font-weight;
+    }
 }
 
 .col-7 {
@@ -829,4 +832,15 @@ width: 255px;
 .image1{
   top: -200px;
     right: 232px;
+}
+
+.side-bar{
+    background-color: #1010110A;
+}
+
+.text-size{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify;
 }

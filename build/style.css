@@ -101,6 +101,10 @@ nav li {
   line-height: 100%;
   color: #2E438E;
 }
+.simple .para1 {
+  font-size: 20px;
+  font-weight: 400;
+}
 
 .col-7 {
   gap: 10px;
@@ -642,6 +646,17 @@ input:focus {
 .image1 {
   top: -200px;
   right: 232px;
+}
+
+.side-bar {
+  background-color: rgba(16, 16, 17, 0.0392156863);
+}
+
+.text-size {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */
