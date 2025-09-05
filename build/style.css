@@ -680,4 +680,28 @@ input:focus {
   text-align: center;
 }
 
+.time-card {
+  background-color: #504388;
+  color: #FFFFFF;
+  height: 55px;
+  bottom: 3%;
+  left: 30%;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.sidebar-card {
+  width: 245px;
+  height: 175px;
+  background-color: rgba(80, 67, 136, 0.1490196078);
+}
+.sidebar-card img {
+  width: 225px;
+  height: 120px;
+}
+.sidebar-card p {
+  font-size: 15px -3px;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=style.css.map */
