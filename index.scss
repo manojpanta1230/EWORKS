@@ -887,7 +887,74 @@ font-size: base.$font-size +1px;
             height: 120px;
     }
     p{
-        font-size: base.$font-size -3px;
+        font-size: base.$font-size - 3px;
         font-weight: base.$font-weight;
     }
 }
+
+ .parent {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(7, 150px); /* fixed row height */
+      gap: 10px;
+      max-width: 1264px;
+      margin: 0 auto;
+    }
+
+    .parent img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+   
+    }
+
+    /* Layout mapping */
+    .div1 { 
+      grid-area: 1 / 1 / 2 / 2; /* row1 col1 */
+      font-size: 62px; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      color: #2E438E80;
+    }
+    .div2 { grid-area: 2 / 1 / 6 / 2; } /* spans row2-5 col1 */
+    .div3 { grid-area: 6 / 1 / 8 / 2; } /* bottom-left */
+    .div4 { grid-area: 1 / 2 / 4 / 3; } /* tall image middle-top */
+    .div5 { grid-area: 4 / 2 / 6 / 3; } /* mid image */
+    .div6 { grid-area: 6 / 2 / 8 / 3; } /* bottom-mid */
+    .div7 { grid-area: 1 / 3 / 4 / 4; } /* tall right image */
+    .div8 { grid-area: 4 / 3 / 7 / 4; } /* big right image */
+    .div9 { 
+      grid-area: 7 / 3 / 8 / 4; 
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* Button styling */
+ .grid-container {
+  display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(7, 150px); /* fixed row height */
+      gap: 10px;
+      max-width: 1264px;
+      margin: 0 auto;
+}
+.grid-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+   
+    }
+
+.box1 { grid-area: 1 / 1 / 5 / 2; }
+.box2 { grid-area: 5 / 1 / 7 / 2; }
+.box3 { grid-area: 7 / 1 / 8 / 2; }
+.box4 { grid-area: 1 / 2 / 3 / 3; }
+.box5 { grid-area: 3 / 2 / 5 / 3; }
+.box6 { grid-area: 5 / 2 / 8 / 3; }
+.box7 {
+     grid-area: 1 / 3 / 2 / 4;
+    font-size: 62px; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      color: #2E438E80; }
+.box8 { grid-area: 2 / 3 / 5 / 4; }
+.box9 { grid-area: 5 / 3 / 8 / 4; }
