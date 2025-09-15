@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+  font-family: "HelveticaNowText";
+  src: url("webfonts/HelveticaNowText-Regular.woff2") format("woff2"), url("webfonts/HelveticaNowText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +13,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNowText", sans-serif;
   overflow-x: hidden;
 }
 body .first-row {
@@ -56,8 +63,8 @@ nav li {
   top: -29%;
 }
 .text h1 {
-  font-size: 60px;
-  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 115px;
   color: transparent;
   -webkit-text-stroke: 0.5px white;
 }
@@ -101,6 +108,10 @@ nav li {
   line-height: 100%;
   color: #2E438E;
 }
+.simple p {
+  font-weight: 300;
+  font-size: 18px;
+}
 .simple .para1 {
   font-size: 20px;
   font-weight: 400;
@@ -108,6 +119,10 @@ nav li {
 
 .col-7 {
   gap: 10px;
+}
+
+.img-wrap img {
+  object-fit: cover;
 }
 
 .img-wrap::before {
@@ -162,10 +177,11 @@ nav li {
 }
 
 .button1 {
-  color: #2E438E;
-  padding: 7px;
+  color: #FFFFFF;
+  padding: 10px 20px;
   background-color: transparent;
   border: 1px solid #2E438E;
+  font-size: 20px;
 }
 
 .partner {
@@ -215,6 +231,7 @@ nav li {
 
 .image-top img {
   height: 100vh;
+  object-fit: cover;
 }
 
 .testimonial-card {
@@ -816,6 +833,90 @@ input:focus {
 
 .box9 {
   grid-area: 5/3/8/4;
+}
+
+.square-div {
+  display: grid;
+  grid-template-columns: repeat(3, 500px); /* smaller columns */
+  grid-template-rows: repeat(4, 200px);
+  gap: 10px; /* spacing between items */
+  justify-content: start;
+  align-content: start;
+  padding: 10px;
+}
+
+.square-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Button styling */
+/* Grid areas (corrected) */
+.square-div1 {
+  grid-area: 1/1/2/2;
+}
+
+.square-div2 {
+  grid-area: 2/1/4/1;
+}
+
+.square-div3 {
+  grid-area: 4/1/5/2;
+}
+
+.square-div4 {
+  grid-area: 1/2/3/4;
+}
+
+.square-div5 {
+  grid-area: 3/2/5/3;
+}
+
+.square-div6 {
+  grid-area: 3/3/5/4;
+}
+
+.box-div {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  grid-template-rows: repeat(4, 200px);
+  gap: 10px;
+  justify-content: start;
+  align-content: start;
+  padding: 10px;
+}
+
+.box-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Button styling */
+/* Grid areas (corrected) */
+.box-div1 {
+  grid-area: 1/1/3/3;
+}
+
+.box-div2 {
+  grid-area: 3/1/5/1;
+}
+
+.box-div3 {
+  grid-area: 3/2/5/2;
+}
+
+.box-div4 {
+  grid-area: 1/3/3/4;
+}
+
+.box-div5 {
+  grid-area: 3/3/4/4;
+}
+
+.box-div6 {
+  grid-area: 4/3/6/4;
 }
 
 /*# sourceMappingURL=style.css.map */

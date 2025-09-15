@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'HelveticaNowText';
+    src: url('webfonts/HelveticaNowText-Regular.woff2') format('woff2'),
+        url('webfonts/HelveticaNowText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 $primary-color: #2E438E;
 $secondary-color: #FFFFFF;
@@ -17,7 +25,7 @@ $font-size: 15px;
 
 $text-color: white;
 
-$primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$primary-font: 'HelveticaNowText', sans-serif;
 $secondary-font: "Bebas Neue", sans-serif;
 
 $fixed_margin: 10px;
