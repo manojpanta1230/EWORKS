@@ -301,6 +301,10 @@ nav li {
   height: 59vh;
 }
 
+.button-color {
+  color: #2E438E;
+}
+
 .arrow {
   top: 0;
   left: -21%;
