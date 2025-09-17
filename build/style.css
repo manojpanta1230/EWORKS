@@ -72,15 +72,24 @@ nav li {
 .card {
   background-color: #FFFFFF;
   border: 1px solid #2E438E;
-  width: 280px;
-  height: 161px;
   padding: 20px;
   gap: 10px;
   color: #2E438E;
   border-radius: 0;
 }
+.card:hover {
+  background-color: #2E438E;
+  color: #FFFFFF;
+  cursor: pointer;
+}
 .card span {
   font-size: 25px;
+}
+
+.card1 {
+  border: 1px solid #2E438E;
+  padding: 20px;
+  cursor: pointer;
 }
 
 .card-wrap {
@@ -88,18 +97,20 @@ nav li {
 }
 
 .card-value {
-  width: fit-content;
   gap: 20px;
 }
 
 .long-card {
-  width: 205px;
   height: 336px;
   border: 1px solid #2E438E;
   padding: 10px;
-  line-height: 100%;
   color: #2E438E;
   gap: 20px;
+}
+.long-card:hover {
+  background-color: #2E438E;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .simple h2, .simple span {
@@ -163,8 +174,7 @@ nav li {
 
 .simple-form1 {
   z-index: 1000;
-  top: 25%;
-  left: 9%;
+  margin-top: 210px;
 }
 .simple-form1 h2 {
   font-weight: 700;
@@ -176,12 +186,36 @@ nav li {
   border-color: #FFFFFF;
 }
 
+.circle {
+  bottom: 30px;
+  right: 20px;
+  border: 2px solid #FFFFFF;
+  padding: 10px;
+  cursor: pointer;
+}
+.circle:hover {
+  background-color: #17A8DF;
+  border-color: #ffc107;
+}
+.circle img {
+  height: 40px;
+  width: 40px;
+  color: #FFFFFF;
+}
+.circle p {
+  font-size: 10px;
+}
+
 .button1 {
   color: #FFFFFF;
   padding: 10px 20px;
   background-color: transparent;
   border: 1px solid #2E438E;
   font-size: 20px;
+}
+.button1:hover {
+  background-color: #2E438E;
+  color: #FFFFFF;
 }
 
 .partner {
@@ -432,8 +466,8 @@ footer {
 }
 
 .arrow2 {
-  top: -4%;
-  left: -35%;
+  top: 6%;
+  left: -40%;
 }
 .arrow2 img {
   transform: rotate(-180deg);
@@ -442,7 +476,6 @@ footer {
 
 .event {
   background-color: #2E438E;
-  padding: 80px 0px;
 }
 
 .testimonial-card1 {
@@ -938,6 +971,11 @@ input:focus {
 
 .box-div6 {
   grid-area: 4/3/6/4;
+}
+
+.padding-box {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

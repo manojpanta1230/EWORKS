@@ -96,17 +96,25 @@ nav {
 .card {
     background-color: $secondary-color;
     border: 1px solid $primary_color;
-    width: $fixed_margin + 270px;
-    height: $fixed_margin + 151px;
     padding: $fixed_margin+10px;
     gap: $fixed_gap;
     color: $primary-color;
     border-radius: 0;
+ &:hover{
+    background-color: $primary-color;
+    color: $secondary-color;
+    cursor: pointer;
 
+ }
     span {
         font-size: $font_size + 10px;
     }
 
+}
+.card1{
+    border: 1px solid $primary_color;
+    padding: $fixed_margin+10px;
+    cursor: pointer;
 }
 
 .card-wrap {
@@ -115,18 +123,23 @@ nav {
 }
 
 .card-value {
-    width: fit-content;
     gap: $fixed_gap + 10px;
 }
 
 .long-card {
-    width: $font-size + 190px;
+   
     height: $font-size + 321px;
     border: 1px solid $primary_color;
     padding: $fixed_margin;
-    line-height: 100%;
+    
     color: $primary_color;
     gap: $fixed_gap + 10px;
+    &:hover{
+        background-color: $primary-color;
+        color: $secondary-color;
+        cursor: pointer;
+    
+     }
 }
 
 .simple {
@@ -206,8 +219,7 @@ nav {
 
 .simple-form1 {
     z-index: 1000;
-    top: 25%;
-    left: 9%;
+    margin-top: $fixed_margin + 200;
 
     h2 {
         font-weight: $font_weight + 300;
@@ -222,6 +234,29 @@ nav {
     }
 }
 
+.circle{
+    bottom: 30px;
+    right: 20px;
+    border: 2px solid $secondary-color;
+    padding: $fixed_margin;
+    cursor: pointer;
+    &:hover{
+        background-color: $light-blue;
+        border-color: $warning-color
+    }
+    
+  img{
+    height: 40px;
+    width: 40px;
+    color: $secondary-color;
+
+    
+  }
+  p{
+    font-size: $font-size - 5;
+  }
+}
+
 .button1 {
    color: $secondary-color;
    
@@ -229,10 +264,12 @@ nav {
     background-color: transparent;
     border: 1px solid $primary-color;
     font-size: $font-size + 5 ;
-
-
+&:hover
+{
+    background-color: $primary-color;
+    color: $secondary-color;
 }
-
+}
 
 .partner {
     color: $primary_color;
@@ -518,8 +555,8 @@ footer {
 }
 
 .arrow2 {
-    top: -4%;
-    left: -35%;
+    top: 6%;
+    left: -40%;
 
     img {
         transform: rotate(-180deg);
@@ -529,7 +566,7 @@ footer {
 
 .event {
     background-color: $primary-color;
-    padding: 80px 0px;
+    
 }
 
 
@@ -1000,3 +1037,12 @@ font-size: $font-size +1px;
 .box-div4{ grid-area: 1/3/3/4; } 
 .box-div5{ grid-area: 3/3/4/4; } 
 .box-div6{ grid-area:4/3/6/4;  }
+
+
+
+
+.padding-box{
+        padding-top: $fixed_margin + 90;
+        padding-bottom: $fixed_margin + 90;
+
+}
