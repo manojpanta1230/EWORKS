@@ -744,7 +744,11 @@ footer {
 }
 .contact{
     background-color: $light-color;
-    min-height:524px;
+    right: 64%;
+    top: 259px;
+    width: 100%;
+   min-height: 468px;
+    
     
 }
 input,select {
@@ -767,7 +771,7 @@ input:focus {
 }
 .height2 section{
       font-weight: $font-weight +100;
-    font-size: $font-size +6px;
+   
     color: $primary-color;
 }
 .height2::-webkit-scrollbar {
@@ -788,6 +792,8 @@ input:focus {
     background-color:$primary-color;
 
 }
+
+
 
 
 

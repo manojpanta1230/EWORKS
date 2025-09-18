@@ -621,7 +621,10 @@ footer {
 
 .contact {
   background-color: #D1E7EF;
-  min-height: 524px;
+  right: 64%;
+  top: 259px;
+  width: 100%;
+  min-height: 468px;
 }
 
 input, select {
@@ -646,7 +649,6 @@ input:focus {
 
 .height2 section {
   font-weight: 500;
-  font-size: 21px;
   color: #2E438E;
 }
 
