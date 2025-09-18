@@ -52,18 +52,19 @@ nav {
         z-index: 1000;
 
     }
-
-    a {
-        text-decoration: none;
-    }
-
     li {
         list-style-type: none;
-        color: $primary-color;
+      
         size: $font_size + 1px;
         font-weight: $font_weight;
 
     }
+    a {
+        text-decoration: none;
+          color: $primary-color;
+    }
+
+
 }
 
 

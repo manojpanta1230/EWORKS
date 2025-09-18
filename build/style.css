@@ -45,14 +45,14 @@ nav ul {
   gap: 35px;
   z-index: 1000;
 }
-nav a {
-  text-decoration: none;
-}
 nav li {
   list-style-type: none;
-  color: #2E438E;
   size: 16px;
   font-weight: 400;
+}
+nav a {
+  text-decoration: none;
+  color: #2E438E;
 }
 
 .text {
