@@ -594,7 +594,12 @@ footer {
 }
 .navtab1 #pills-tab .active {
   border-radius: 0;
-  background-color: #17A8DF;
+  background-color: #2E438E;
+  color: #FFFFFF;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #2E438E;
   color: #FFFFFF;
 }
 
@@ -738,7 +743,6 @@ input:focus {
 .text-size {
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: 1px;
   text-align: justify;
 }
 
@@ -764,17 +768,28 @@ input:focus {
 }
 
 .sidebar-card {
-  width: 245px;
-  height: 175px;
   background-color: rgba(80, 67, 136, 0.1490196078);
 }
 .sidebar-card img {
-  width: 225px;
-  height: 120px;
+  object-fit: contain;
+  width: 100%;
 }
 .sidebar-card p {
   font-size: 12px;
   font-weight: 400;
+}
+
+.sidebar-card1 {
+  background-color: rgba(80, 67, 136, 0.1490196078);
+}
+.sidebar-card1 img {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+}
+.sidebar-card1 p {
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .parent {
