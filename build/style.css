@@ -906,7 +906,8 @@ input:focus {
 
 .square-div {
   display: grid;
-  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(3, 0.5fr); /* smaller columns */
+  grid-template-rows: repeat(4, 0.5fr);
   gap: 10px; /* spacing between items */
   padding: 10px;
 }
@@ -945,7 +946,8 @@ input:focus {
 
 .box-div {
   display: grid;
-  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(4, 0.5fr);
   gap: 10px;
   justify-content: start;
   align-content: start;

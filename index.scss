@@ -1004,7 +1004,8 @@ font-size: $font-size +1px;
 
    .square-div {
       display: grid;
-        grid-template-rows: repeat(4, 200px); 
+      grid-template-columns: repeat(3, 0.5fr); /* smaller columns */
+        grid-template-rows: repeat(4, 0.5fr); 
       gap: 10px; /* spacing between items */
     
       padding: 10px;
@@ -1030,7 +1031,8 @@ font-size: $font-size +1px;
 .square-div6{ grid-area:3/3/5/4;  }
    .box-div {
       display: grid;
-      grid-template-rows: repeat(4, 200px); 
+      grid-template-columns: repeat(3, 0.5fr); 
+      grid-template-rows: repeat(4, 0.5fr); 
       gap: 10px;
       justify-content: start;
       align-content: start;
