@@ -654,7 +654,7 @@ footer {
 .bottom-footer {
     .college-logo {
         img {
-            height: 20px;
+            height: 25px;
 
         }
     }
@@ -671,7 +671,7 @@ footer {
         background-color: #f8f9fa;
         
    top: -7px;
-    right: 53%;
+    right: 58%;
     }
 
     p {
@@ -1004,11 +1004,9 @@ font-size: $font-size +1px;
 
    .square-div {
       display: grid;
-      grid-template-columns: repeat(3, 500px); /* smaller columns */
         grid-template-rows: repeat(4, 200px); 
       gap: 10px; /* spacing between items */
-      justify-content: start;
-      align-content: start;
+    
       padding: 10px;
     }
 
@@ -1032,7 +1030,6 @@ font-size: $font-size +1px;
 .square-div6{ grid-area:3/3/5/4;  }
    .box-div {
       display: grid;
-      grid-template-columns: repeat(3, 500px); 
       grid-template-rows: repeat(4, 200px); 
       gap: 10px;
       justify-content: start;

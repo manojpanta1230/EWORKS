@@ -547,7 +547,7 @@ footer {
 }
 
 .bottom-footer .college-logo img {
-  height: 20px;
+  height: 25px;
 }
 
 .order-list {
@@ -561,7 +561,7 @@ footer {
 .contact-number .call {
   background-color: #f8f9fa;
   top: -7px;
-  right: 53%;
+  right: 58%;
 }
 .contact-number p {
   border: 5px solid #17A8DF;
@@ -906,11 +906,8 @@ input:focus {
 
 .square-div {
   display: grid;
-  grid-template-columns: repeat(3, 500px); /* smaller columns */
   grid-template-rows: repeat(4, 200px);
   gap: 10px; /* spacing between items */
-  justify-content: start;
-  align-content: start;
   padding: 10px;
 }
 
@@ -948,7 +945,6 @@ input:focus {
 
 .box-div {
   display: grid;
-  grid-template-columns: repeat(3, 500px);
   grid-template-rows: repeat(4, 200px);
   gap: 10px;
   justify-content: start;
