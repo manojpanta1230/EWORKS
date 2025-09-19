@@ -88,9 +88,28 @@
   <li><a href="gallery.html">Gallery</a></li>
   <li><a href="contact_us.html">Contact</a></li>
 					<li>
-						<i class="fa-solid fa-magnifying-glass"></i>
+				  <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#myModal" style="cursor: pointer;"></i>
 					</li>
 			<li>
+<!-- Modal -->
+<!-- Fullscreen Modal with X close button -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-backdrop="false">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel"> I am Looking For </h5>
+        <!-- Close button -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 						<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -156,9 +175,10 @@
 
 		</div>
 		<!--Partner Universities  1st-->
-		<div class=" position-relative p-0 overflow-hidden  z-2  padding-box ">
+		<div class=" position-relative p-0 overflow-hidden  z-2  padding-box  ">
 			
 			<div class="simple-form1 simple position-absolute ">
+				<div class="container">
   <h2 class="text-light">
     Immersive
     <br>
@@ -174,6 +194,7 @@
   <button type="button" class="button1 text-light">Explore More</button>
 
   
+</div>
 </div>
 <div class="position-absolute circle d-flex flex-column justify-content-center align-items-center">
 <a href="#" >
@@ -800,39 +821,44 @@
 	
 	<!--FOOTER -->
 
-	<div class="  ">
+	<div class="p-3">
 		<div class="container">
-			<div class="row bottom-footer justify-content-center align-items-center ">
-				<div
-					class="contact-number col-6 d-flex align-items-center position-relative">
+			<div class="row bottom-footer">
+				<div class="contact-number col-3 d-flex align-items-center position-relative">
 					<i
 						class="fa-solid fa-phone p-3 d-flex justify-content-center align-items-center text-light width-fit"></i>
 					<div class="position-absolute call text-info"> Call us Now</div>
 
 					<p class="m-0"> +977 9867396900</p>
 				</div>
+				<div class="col-3"></div>
 				<div class="college-logo col-6">
+					<div class="row">
+						<div class="col-auto">
 					<img src="Images/uwe.png" alt>
-					<img src="Images/leeds.jpeg" alt>
-					<img src="Images/kellee.png" alt>
-					<img src="Images/acca.png" alt>
-					<img src="Images/acca.png" alt>
-					<img src="Images/cambridge.png" alt>
-
+					</div>
+					
+					<div class="col-auto"><img src="Images/leeds.jpeg" alt></div>
+					<div class="col-auto"><img src="Images/kellee.png" alt></div>
+					<div class="col-auto"><img src="Images/acca.png" alt></div>
+					<div class="col-auto"><img src="Images/acca.png" alt></div>
+					<div class="col-auto"><img src="Images/cambridge.png" alt></div>
+</div>
 				</div>
 			</div>
 			<hr>
-			<div class="row  justify-content-between">
-				<div class="contact-number col-auto">
+			<div class="row ">
+				<div class="contact-number col-3">
 					@2023 terms and conditions
 				</div>
-				<ul class="col-auto d-flex justify-content-end gap-3 order-list">
-					<li>Terms & conditions</li>
-					<li>Privacy Policy</li>
-					<li>Cookie Policy</li>
-					<li>Disclaimer</li>
-					<li>Help Center</li>
-					<li>Contact Us</li>
+				<div class="col-3"></div>
+				<ul class="col-6 d-flex justify-content-end gap-3 order-list">
+					<div class="col-auto"><li>Terms & conditions</li></div>
+					<div class="col-auto"><li>Privacy Policy</li></div>
+					<div class="col-auto"><li>Cookie Policy</li></div>
+					<div class="col-auto"><li>Disclaimer</li></div>
+					<div class="col-auto"><li>Help Center</li></div>
+					<div class="col-auto"><li>Contact Us</li></div>
 				</ul>
 
 			</div>

@@ -571,12 +571,7 @@ footer {
 }
 
 
-.testimonial-card1 {
 
-
-    width: 392px;
-    max-height: 212px;
-}
 
 .testimonial-inner {
     background: $secondary-color;
@@ -613,7 +608,7 @@ footer {
 
 .bottom-footer {
     background-color: $secondary-color;
-    height: 15vh;
+ 
 }
 
 .description {
@@ -659,7 +654,7 @@ footer {
 .bottom-footer {
     .college-logo {
         img {
-            height: 50px;
+            height: 20px;
 
         }
     }
@@ -667,13 +662,16 @@ footer {
 
 .order-list {
     list-style-type: none;
+    font-size: $font-size - 5 ;
 }
 
 .contact-number {
+    font-size: $font-size - 5 ;
     .call {
         background-color: #f8f9fa;
-        top: -12px;
-        right: 74%;
+        
+   top: -7px;
+    right: 53%;
     }
 
     p {
