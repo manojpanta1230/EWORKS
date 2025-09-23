@@ -115,13 +115,13 @@ nav a {
 
 .simple h2, .simple span {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 35px;
   line-height: 100%;
   color: #2E438E;
 }
 .simple p {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 15px;
 }
 .simple .para1 {
   font-size: 20px;
@@ -987,8 +987,29 @@ input:focus {
 }
 
 .padding-box {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 70px 0;
+}
+
+.hero-img {
+  width: 35%;
+  top: 28%;
+  left: 53%;
+}
+
+.hero-img1 {
+  width: 35%;
+  top: -25%;
+  left: 10%;
+}
+
+.small-img {
+  width: 100%;
+}
+
+.img-container {
+  background: url("../Images/images.png") no-repeat right;
+  background-size: auto 150%;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
