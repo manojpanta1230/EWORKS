@@ -1012,4 +1012,8 @@ input:focus {
   height: 100vh;
 }
 
+.color-changer img {
+  color: #2E438E;
+}
+
 /*# sourceMappingURL=style.css.map */
