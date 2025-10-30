@@ -1233,3 +1233,22 @@ input:focus {
     background-size: auto 150%;
     height: 100vh;
 }
+@media (max-width: 992px) {
+  ul li {
+    display: none;
+  }
+
+ 
+  ul li:nth-last-child(-n + 2) {
+    display: inline-block;
+  }
+  footer {
+    .container{
+        .row{
+            flex-direction: column;
+          
+    }
+ 
+  }
+}
+}

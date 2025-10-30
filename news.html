@@ -56,56 +56,46 @@
   </head>
   <body>
     <div class="container z-1000 position-relative">
-      <nav>
+    <nav >
         <div class="position-absolute top-0 end-0" style="z-index: -1">
-          <img alt src="Images/Vector.svg" />
+          <img src="Images/Vector.svg" alt="" />
         </div>
-        <a href="index.html">
-          <img alt="Eworks Logo" src="Images/Blacklogo.png" />
-        </a>
+        <a href="index.html"
+          ><img src="Images/Blacklogo.png" alt="Eworks Logo"
+        /></a>
         <ul>
-          <li>
-            <a href="aboutus.html">About</a>
-          </li>
-          <li>
-            <a href="course.html">Courses</a>
-          </li>
-          <li>
-            <a href="news.html">News</a>
-          </li>
-          <li>
-            <a href="gallery.html">Gallery</a>
-          </li>
-          <li>
-            <a href="contact_us.html">Contact</a>
-          </li>
-          <li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+          <li >
             <i class="fa-solid fa-magnifying-glass"></i>
           </li>
           <li>
             <button
-              aria-controls="offcanvasRight"
               class="btn"
-              data-bs-target="#offcanvasRight"
-              data-bs-toggle="offcanvas"
               type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
             >
               <i class="fa-solid fa-bars"></i>
             </button>
 
             <div
-              aria-labelledby="offcanvasRightLabel"
               class="offcanvas offcanvas-end"
-              id="offcanvasRight"
               tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
             >
               <div class="offcanvas-header">
                 <h5 id="offcanvasRightLabel">Welcome</h5>
                 <button
-                  aria-label="Close"
+                  type="button"
                   class="btn-close text-reset"
                   data-bs-dismiss="offcanvas"
-                  type="button"
+                  aria-label="Close"
                 ></button>
               </div>
               <div class="offcanvas-body">...</div>
@@ -130,7 +120,7 @@
       </div>
 
       <!--Navtab-->
-      <div class="navtab1 mt-4">
+      <div class="navtab1 mt-4 ">
         <ul class="nav nav-pills mb-3 gap-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
             <button
@@ -1287,30 +1277,27 @@
     </div>
 
     <!--NEXT Steps-->
-    <div class="row">
-      <div class="col-7">
-        <img alt class="w-100" src="Images/image_dd.png" />
+  	    <div class="row mt-5 ">
+      <div class="col-7 d-none d-md-block">
+        <img src="Images/image_dd.png" alt class="w-100 " />
       </div>
-      <div class="col-5 first-bar d-flex flex-column justify-content-center">
-        <p>
-          Ready to take
-          <br />the next step?
-        </p>
+      <div class=" col-md-5 first-bar d-flex flex-column justify-content-center ">
+        <p>Ready to take <br />the next step?</p>
         <div class="row">
           <div class="col-auto">
             <button
+              type="button"
               class="button1 button-color"
               style="background-color: #2e438e; color: white"
-              type="button"
             >
               Apply Now
             </button>
           </div>
           <div class="col-auto">
             <button
+              type="button"
               class="button1 button-color"
               style="border: 1px solid white; color: white"
-              type="button"
             >
               Visit Us
             </button>
@@ -1322,76 +1309,78 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-7">
-            <div class="first-links d-flex">
-              <div class="description">
-                <h2>The British College</h2>
-                <p>
-                  We are a world-class college in Nepal that
-                  <br />offers British and international qualifications
-                  <br />that equip our graduates with the knowledge,
-                  <br />skills, and values they need to become creative
-                  <br />entrepreneurs and achieve success in the <br />global
-                  job market.
-                </p>
-              </div>
-              <div class="quick-links">
-                <h2>Quick Links</h2>
-                <div class="nav-link d-flex flex-column p-2">
-                  <a href="#">Home</a>
-                  <a href="#">About Us</a>
-                  <a href="#">Programs</a>
-                  <a href="#">Contact</a>
-                </div>
-              </div>
-              <div class="quick-links">
-                <h2>Quick Links</h2>
-                <div class="nav-link d-flex flex-column p-2">
-                  <a href="#">Home</a>
-                  <a href="#">About Us</a>
-                  <a href="#">Programs</a>
-                  <a href="#">Contact</a>
-                </div>
-              </div>
-            </div>
-            <div class="gap-4 d-flex text-light">
+          <div class="col-md-7 ">
+            <div class="first-links d-flex flex-lg-row flex-column align-items-start w-100  ">
+  <!-- Description -->
+  <div class="description mb-4">
+    <h2>The British College</h2>
+    <p>
+      We are a world-class college in Nepal that offers British and
+      international qualifications that equip our graduates with the
+      knowledge, skills, and values they need to become creative
+      entrepreneurs and achieve success in the global job market.
+    </p>
+  </div>
+
+
+  <div class="d-flex flex-row flex-md-row gap-4 w-100">
+
+    <div class="quick-links ">
+      <h2>Quick Links</h2>
+      <div class="nav-link d-flex flex-column p-2">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Programs</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <!-- Quick Links 2 -->
+    <div class="quick-links flex-fill">
+      <h2>Quick Links</h2>
+      <div class="nav-link d-flex flex-column p-2">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Programs</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <div class="gap-4 d-flex text-light mt-5">
               <i
                 class="fa-brands fa-facebook-f icons-value d-flex justify-content-center align-items-center"
                 style="background-color: #2366aa"
-              >
-              </i>
+              ></i>
               <i
                 class="fa-brands fa-instagram icons-value d-flex justify-content-center align-items-center"
                 style="background-color: red"
-              >
-              </i>
+              ></i>
               <i
                 class="fa-brands fa-x-twitter icons-value d-flex justify-content-center align-items-center"
                 style="background-color: #1da1f2"
-              >
-              </i>
+              ></i>
               <i
                 class="fa-brands fa-linkedin icons-value d-flex justify-content-center align-items-center"
                 style="background-color: #0274b3"
-              >
-              </i>
+              ></i>
               <i
                 class="fa-brands fa-youtube icons-value d-flex justify-content-center align-items-center"
                 style="background-color: #ff0000"
-              >
-              </i>
+              ></i>
             </div>
 
             <div class="newsletter">
               <h2>Subscribe Newsletters</h2>
               <form action="#">
-                <div class="row gap-3">
+                <div class="row gap-3 ">
                   <input
-                    class="col-8 p-3"
-                    placeholder="Your email address"
                     type="email"
+                    placeholder="Your email address"
+                    class="col-md-8 p-3"
                   />
-                  <button class="col-3 button1 p-0 m-0" type="submit">
+                  <button type="submit" class="col-md-3 button1 p-0 m-0">
                     Subscribe
                   </button>
                 </div>
@@ -1400,74 +1389,52 @@
           </div>
           <div class="col-5">
             <div class="map p-3 mt-3">
-              <img alt src="Images/map.svg" style="height: 500px" />
+              <img src="Images/map.svg" alt  />
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <div class="p-3">
-      <div class="container">
-        <div class="row bottom-footer">
+
+    <div class="p-3 ">
+      <div class="container ">
+        <div class="row bottom-footer ">
           <div
-            class="contact-number col-3 d-flex align-items-center position-relative"
+            class="contact-number col-md-3 d-flex align-items-center position-relative"
           >
             <i
               class="fa-solid fa-phone p-3 d-flex justify-content-center align-items-center text-light width-fit"
-            >
-            </i>
+            ></i>
             <div class="position-absolute call text-info">Call us Now</div>
 
             <p class="m-0">+977 9867396900</p>
           </div>
-          <div class="col-3"></div>
-          <div class="college-logo col-6">
-            <div class="row">
+          <div class="col-md-3"></div>
+          <div class="college-logo col-md-6">
+            <div class="row g-3">
               <div class="col-auto">
-                <img alt src="Images/uwe.png" />
+                <img src="Images/uwe.png" alt />
               </div>
 
-              <div class="col-auto">
-                <img alt src="Images/leeds.jpeg" />
-              </div>
-              <div class="col-auto">
-                <img alt src="Images/kellee.png" />
-              </div>
-              <div class="col-auto">
-                <img alt src="Images/acca.png" />
-              </div>
-              <div class="col-auto">
-                <img alt src="Images/acca.png" />
-              </div>
-              <div class="col-auto">
-                <img alt src="Images/cambridge.png" />
-              </div>
+              <div class="col-auto"><img src="Images/leeds.jpeg" alt /></div>
+              <div class="col-auto"><img src="Images/kellee.png" alt /></div>
+              <div class="col-auto"><img src="Images/acca.png" alt /></div>
+              <div class="col-auto"><img src="Images/acca.png" alt /></div>
+              <div class="col-auto"><img src="Images/cambridge.png" alt /></div>
             </div>
           </div>
         </div>
         <hr />
-        <div class="row">
-          <div class="contact-number col-3">@2023 terms and conditions</div>
-          <div class="col-3"></div>
-          <ul class="col-6 d-flex gap-3 order-list">
-            <div class="col-auto">
-              <li>Terms & conditions</li>
-            </div>
-            <div class="col-auto">
-              <li>Privacy Policy</li>
-            </div>
-            <div class="col-auto">
-              <li>Cookie Policy</li>
-            </div>
-            <div class="col-auto">
-              <li>Disclaimer</li>
-            </div>
-            <div class="col-auto">
-              <li>Help Center</li>
-            </div>
-            <div class="col-auto">
-              <li>Contact Us</li>
-            </div>
+        <div class="row ">
+          <div class="contact-number col-md-3">@2023 terms and conditions</div>
+          <div class="col-md-3"></div>
+          <ul class="col-md-6 d-flex flex-wrap  gap-3 order-list">
+            <div class="col-auto"><li>Terms & conditions</li></div>
+            <div class="col-auto"><li>Privacy Policy</li></div>
+            <div class="col-auto"><li>Cookie Policy</li></div>
+            <div class="col-auto"><li>Disclaimer</li></div>
+            <div class="col-auto"><li>Help Center</li></div>
+            <div class="col-auto"><li>Contact Us</li></div>
           </ul>
         </div>
       </div>
