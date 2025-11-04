@@ -70,8 +70,9 @@
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact_us.html">Contact</a></li>
           <li>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </li>
+				  <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#myModal" style="cursor: pointer;"></i>
+					</li>
+
           <li>
             <button
               class="btn"
@@ -98,12 +99,29 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="offcanvas-body">...</div>
+              <div class="offcanvas-body">
+
+                
+              </div>
             </div>
           </li>
         </ul>
       </nav>
-
+<!-- Fullscreen Modal with X close button -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-backdrop="false">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel"> I am Looking For </h5>
+        <!-- Close button -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+      </div>
+    </div>
+  </div>
+</div>
       <nav aria-label="breadcrumb" class="p-2">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -115,7 +133,8 @@
       </nav>
 
       <div class="row">
-        <div class="col-3">
+        <div class="col-md-3 
+        ">
           <div class="advisory-card d-flex flex-column justify-content-center align-items-center gap-3 rounded">
             <img src="Images/my.jpg" class="rounded" alt="..." />
             <p class="m-0">Manoj Panta</p>
@@ -143,7 +162,7 @@
             ></i>
           </div>
         </div>
-        <div class="col-9">
+        <div class="col-md-9">
         <div class="simple z-1">
           <h2>Rajan Kandel</h2>
           <p class="text-secondary">CEO and Founder</p>
@@ -305,11 +324,11 @@
     </div>
     <!--Navtab-->
 
-    <div class="row">
-      <div class="col-7">
-        <img src="Images/image_dd.png" alt class="w-100" />
+	    <div class="row mt-5 ">
+      <div class="col-md-7 ">
+        <img src="Images/image_dd.png" alt class="w-100 " />
       </div>
-      <div class="col-5 first-bar d-flex flex-column justify-content-center">
+      <div class=" col-md-5 first-bar d-flex flex-column justify-content-center ">
         <p>Ready to take <br />the next step?</p>
         <div class="row">
           <div class="col-auto">
@@ -334,45 +353,48 @@
       </div>
     </div>
 
-    <footer>
+  <footer>
       <div class="container">
         <div class="row">
-          <div class="col-7">
-            <div class="first-links d-flex ">
-              <div class="description">
-                <h2>The British College</h2>
-                <p>
-                  We are a world-class college in Nepal that
-                  <br />
-                  offers British and international qualifications
-                  <br />
-                  that equip our graduates with the knowledge,<br />
-                  skills, and values they need to become creative
-                  <br />
-                  entrepreneurs and achieve success in the
-                  <br />
-                  global job market.
-                </p>
-              </div>
-              <div class="quick-links">
-                <h2>Quick Links</h2>
-                <div class="nav-link d-flex flex-column p-2">
-                  <a href="#">Home</a>
-                  <a href="#">About Us</a>
-                  <a href="#">Programs</a>
-                  <a href="#">Contact</a>
-                </div>
-              </div>
-              <div class="quick-links">
-                <h2>Quick Links</h2>
-                <div class="nav-link d-flex flex-column p-2">
-                  <a href="#">Home</a>
-                  <a href="#">About Us</a>
-                  <a href="#">Programs</a>
-                  <a href="#">Contact</a>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-7 ">
+            <div class="first-links d-flex flex-lg-row flex-column align-items-start w-100  ">
+  <!-- Description -->
+  <div class="description mb-4">
+    <h2>The British College</h2>
+    <p>
+      We are a world-class college in Nepal that offers British and
+      international qualifications that equip our graduates with the
+      knowledge, skills, and values they need to become creative
+      entrepreneurs and achieve success in the global job market.
+    </p>
+  </div>
+
+
+  <div class="d-flex flex-row flex-md-row gap-4 w-100">
+
+    <div class="quick-links ">
+      <h2>Quick Links</h2>
+      <div class="nav-link d-flex flex-column p-2">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Programs</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <!-- Quick Links 2 -->
+    <div class="quick-links flex-fill">
+      <h2>Quick Links</h2>
+      <div class="nav-link d-flex flex-column p-2">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Programs</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+
             <div class="gap-4 d-flex text-light mt-5">
               <i
                 class="fa-brands fa-facebook-f icons-value d-flex justify-content-center align-items-center"
@@ -399,13 +421,13 @@
             <div class="newsletter">
               <h2>Subscribe Newsletters</h2>
               <form action="#">
-                <div class="row gap-3">
+                <div class="row gap-3 ">
                   <input
                     type="email"
                     placeholder="Your email address"
-                    class="col-8 p-3"
+                    class="col-md-8 p-3"
                   />
-                  <button type="submit" class="col-3 button1 p-0 m-0">
+                  <button type="submit" class="col-md-3 button1 p-0 m-0">
                     Subscribe
                   </button>
                 </div>
@@ -414,18 +436,18 @@
           </div>
           <div class="col-5">
             <div class="map p-3 mt-3">
-              <img src="Images/map.svg" alt style="height: 500px" />
+              <img src="Images/map.svg" alt  />
             </div>
           </div>
         </div>
       </div>
     </footer>
 
-    <div class="p-3">
-      <div class="container">
-        <div class="row bottom-footer">
+   <div class="p-3 ">
+      <div class="container ">
+        <div class="row bottom-footer ">
           <div
-            class="contact-number col-3 d-flex align-items-center position-relative"
+            class="contact-number col-md-3 d-flex align-items-center position-relative"
           >
             <i
               class="fa-solid fa-phone p-3 d-flex justify-content-center align-items-center text-light width-fit"
@@ -434,9 +456,9 @@
 
             <p class="m-0">+977 9867396900</p>
           </div>
-          <div class="col-3"></div>
-          <div class="college-logo col-6">
-            <div class="row">
+          <div class="col-md-3"></div>
+          <div class="college-logo col-md-6">
+            <div class="row g-3">
               <div class="col-auto">
                 <img src="Images/uwe.png" alt />
               </div>
@@ -450,10 +472,10 @@
           </div>
         </div>
         <hr />
-        <div class="row">
-          <div class="contact-number col-3">@2023 terms and conditions</div>
-          <div class="col-3"></div>
-          <ul class="col-6 d-flex gap-3 order-list">
+        <div class="row ">
+          <div class="contact-number col-md-3">@2023 terms and conditions</div>
+          <div class="col-md-3"></div>
+          <ul class="col-md-6 d-flex flex-wrap  gap-3 order-list">
             <div class="col-auto"><li>Terms & conditions</li></div>
             <div class="col-auto"><li>Privacy Policy</li></div>
             <div class="col-auto"><li>Cookie Policy</li></div>
