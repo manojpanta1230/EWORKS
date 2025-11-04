@@ -70,9 +70,9 @@
           <li><a href="news.html">News</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact_us.html">Contact</a></li>
-          <li>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </li>
+          	<li>
+				  <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#myModal" style="cursor: pointer;"></i>
+					</li>
           <li>
             <button
               class="btn"
@@ -85,26 +85,46 @@
             </button>
 
             <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">Welcome</h5>
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">...</div>
-            </div>
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Welcome</h5>
+    <button
+      type="button"
+      class="btn-close text-reset"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column fs-4" style="gap: 1rem;">
+    <a href="aboutus.html" class="mb-3">About</a>
+    <a href="course.html" class="mb-3">Courses</a>
+    <a href="news.html" class="mb-3">News</a>
+    <a href="gallery.html" class="mb-3">Gallery</a>
+    <a href="contact_us.html" class="mb-3">Contact</a>
+    <i class="fa-solid fa-magnifying-glass mt-3" data-bs-toggle="modal" data-bs-target="#myModal" style="cursor: pointer; font-size: 1.5rem;"></i>
+  </div>
+</div>
           </li>
         </ul>
       </nav>
-
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-backdrop="false">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel"> I am Looking For </h5>
+        <!-- Close button -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+      </div>
+    </div>
+  </div>
+</div>
       <!--Breadcrumbs-->
       <div class="p-3">
         <nav aria-label="breadcrumb" class="p-2">
