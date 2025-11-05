@@ -1045,5 +1045,8 @@ input:focus {
     flex-direction: column;
   }
 }
+.modal-value {
+  background-color: #2D358C;
+}
 
 /*# sourceMappingURL=style.css.map */
