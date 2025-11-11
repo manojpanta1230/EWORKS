@@ -1,436 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="build/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <!-- <script src="js/slider.js"></script> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-    <link rel="icon" type="image/x-icon" href="Images/logo.svg" />
-    <title>Eworks</title>
-  </head>
-  <body>
-    <div class="position-relative">
-      <div class="position-absolute contact"></div>
-    </div>
-    <div class="container z-1000 position-relative">
-      <!--Navbar-->
-      <nav>
-        <div class="position-absolute top-0 end-0" style="z-index: -1">
-          <img src="Images/Vector.svg" alt />
-        </div>
-        <a href="index.html"><img src="Images/Blacklogo.png"
-            alt="Eworks Logo" /></a>
-        <ul>
-          <li><a href="aboutus.html">About</a></li>
-          <li><a href="course.html">Courses</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact_us.html">Contact</a></li>
-          <li>
-            <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal"
-              data-bs-target="#myModal" style="cursor: pointer;"></i>
-          </li>
-          <li>
-<i class="fa-solid fa-bars" data-bs-toggle="modal" data-bs-target="#myModal2" style="cursor: pointer;"></i>
-</li>
-        </ul>
-      </nav>
-      <div class="modal fade" id="myModal" tabindex="-1"
-        aria-labelledby="myModalLabel" aria-hidden="true"
-        data-bs-backdrop="false">
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="myModalLabel"> I am Looking For </h5>
-              <!-- Close button -->
-              <button type="button" class="btn-close" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
 
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="build/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <script src="js/slider.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="icon" type="image/x-icon" href="Images/logo.svg" />
+  <title>Eworks</title>
+</head>
+
+<body>
+
+  <div class="container z-1000 position-relative">
+    <!--Navbar-->
+    <nav>
+      <div class="position-absolute top-0 end-0" style="z-index: -1">
+        <img src="Images/Vector.svg" alt />
+      </div>
+      <a href="index.html"><img src="Images/Blacklogo.png" alt="Eworks Logo" /></a>
+      <ul>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+        <li>
+          <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#myModal"
+            style="cursor: pointer;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-bars" data-bs-toggle="modal" data-bs-target="#myModal2" style="cursor: pointer;"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"
+      data-bs-backdrop="false">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel"> I am Looking For </h5>
+            <!-- Close button -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
           </div>
         </div>
       </div>
-      <div class="modal fade modal-value" id="myModal2" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-backdrop="false">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header modal-value">
-        <h5 class="modal-title text-light" id="myModalLabel" > Welcome </h5>
-        <!-- Close button -->
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal fade modal-value" id="myModal2" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"
+      data-bs-backdrop="false">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header modal-value">
+            <h5 class="modal-title text-light" id="myModalLabel"> Welcome </h5>
+            <!-- Close button -->
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-value">
+
+          </div>
+        </div>
       </div>
-      <div class="modal-body modal-value">
-      
+    </div>
+    <!--Breadcrumbs-->
+    <div class="p-3">
+      <nav aria-label="breadcrumb" class="p-2">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+
+      <div class="simple">
+        <h2>Get in touch with us</h2>
+        <p class="text-secondary">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has.
+        </p>
+      </div>
+      <div class="position-relative">
+        <!--Address and FORM -->
+        <div class="row p-0 gap-5">
+          <div class="col-lg-4 col-md-12 address-bar">
+            <div class="d-flex flex-column gap-3 p-3">
+              <div class="address p-2">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p class="m-1">ADDRESS</p>
+                </div>
+                <p class="text-secondary m-0">
+                  123 Main Street, Anytown, USA
+                </p>
+              </div>
+              <div class="address p-2">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-phone gap-3"></i>
+                  <p class="m-1">CONTACT</p>
+                </div>
+                <p class="text-secondary m-0">
+                  +977 (1) 5970003 / +977 9823576995
+                </p>
+              </div>
+              <div class="address p-2">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fa-regular fa-envelope"></i>
+                  <p class="m-1">EMAIL</p>
+                </div>
+                <p class="text-secondary m-0">
+                  info@thebritishcollege.edu.np
+                </p>
+              </div>
+              <div class="address p-2">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fa-regular fa-clock"></i>
+                  <p class="m-1">OPENING HOURS</p>
+                </div>
+                <p class="text-secondary m-0">Sunday-Friday(9am -5pm)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <form action="#" class="row gap-3">
+              <input type="text" placeholder="First Name" class="col-md-12 p-3" />
+
+              <input type="text" placeholder="Last Name" class="col-md-12 p-3" />
+
+              <input type="phone" placeholder="Phone Number" class="p-3 col-md12" />
+              <input type="text" placeholder="Subject" class="p-3 col-md-12" />
+
+              <select name="cars" id="cars" class="col-md-12 p-3 text-secondary border-0 border-bottom">
+                <option value="volvo">Select Course</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+              <button type="submit" class="button1 p-3 col-12 border-0 text-light" style="background-color: #17a8df">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>	
-      <!--Breadcrumbs-->
-      <div class="p-3">
-        <nav aria-label="breadcrumb" class="p-2">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Contact</li>
-          </ol>
-        </nav>
-
-        <div class="simple">
-          <h2>Get in touch with us</h2>
-          <p class="text-secondary">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has.
-          </p>
+  <!--map and Form-->
+  <div class="row mt-4">
+    <div class="col-lg-4 col-md-12 gx-5 height2">
+      <div class="row gap-2">
+        <section>ACCOUNTS DEPARTMENT</section>
+        <div class="d-flex align-items-center gap-3">
+          <i class="fa-regular fa-envelope"></i>
+          <span>man@thebritishcollege.edu.np</span>
         </div>
-        <div class="position-relative">
-          <!--Adress abND fORM -->
-          <div class="row p-0">
-            <div class="col-lg-5 col-md-12">
-              <div class="d-flex flex-column gap-3">
-                <div class="address p-2">
-                  <div class="d-flex align-items-center gap-3">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="m-1">ADDRESS</p>
-                  </div>
-                  <p class="text-secondary m-0">
-                    123 Main Street, Anytown, USA
-                  </p>
+
+        <div class="d-flex gap-3">
+          <i class="fa-solid fa-phone"></i>
+          <p class="m-0">9867396900</p>
+        </div>
+        <div class="d-flex gap-3">
+          <i class="fa-regular fa-clock"></i>
+          <p>9:30 AM -5:00PM</p>
+        </div>
+      </div>
+      <div class="row gap-2">
+        <section>ACCOUNTS DEPARTMENT</section>
+        <div class="d-flex align-items-center gap-3">
+          <i class="fa-regular fa-envelope"></i>
+          <span>man@thebritishcollege.edu.np</span>
+        </div>
+
+        <div class="d-flex gap-3">
+          <i class="fa-solid fa-phone gap-3"></i>
+          <p class="m-0">9867396900</p>
+        </div>
+        <div class="d-flex gap-3">
+          <i class="fa-regular fa-clock"></i>
+          <p>9:30 AM -5:00PM</p>
+        </div>
+      </div>
+      <div class="row gap-2">
+        <section>ACCOUNTS DEPARTMENT</section>
+        <div class="d-flex align-items-center gap-3">
+          <i class="fa-regular fa-envelope"></i>
+          <span>man@thebritishcollege.edu.np</span>
+        </div>
+
+        <div class="d-flex gap-3">
+          <i class="fa-solid fa-phone"></i>
+          <p class="m-0">9867396900</p>
+        </div>
+        <div class="d-flex gap-3">
+          <i class="fa-regular fa-clock"></i>
+          <p>9:30 AM -5:00PM</p>
+        </div>
+      </div>
+      <div class="row gap-2">
+        <section>ACCOUNTS DEPARTMENT</section>
+        <div class="d-flex align-items-center gap-3">
+          <i class="fa-regular fa-envelope"></i>
+          <span>man@thebritishcollege.edu.np</span>
+        </div>
+
+        <div class="d-flex gap-3">
+          <i class="fa-solid fa-phone"></i>
+          <p class="m-0">9867396900</p>
+        </div>
+        <div class="d-flex gap-3">
+          <i class="fa-regular fa-clock"></i>
+          <p>9:30 AM -5:00PM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-12">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.8157104896368!2d85.31946625539202!3d27.69236175017614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b19295555f%3A0xabfe5f4b310f97de!2sThe%20British%20College%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1756718742117!5m2!1sen!2snp"
+        width="100%" height="100%" style="border: 0" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <!--Next Steps-->
+  <div class="row mt-5 ">
+    <div class="col-md-7 ">
+      <img src="Images/image_dd.png" alt class="w-100 " />
+    </div>
+    <div class=" col-md-5 first-bar d-flex flex-column justify-content-center ">
+      <p>Ready to take <br />the next step?</p>
+      <div class="row">
+        <div class="col-auto">
+          <button type="button" class="button1 button-color" style="background-color: #2e438e; color: white">
+            Apply Now
+          </button>
+        </div>
+        <div class="col-auto">
+          <button type="button" class="button1 button-color" style="border: 1px solid white; color: white">
+            Visit Us
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 ">
+          <div class="first-links d-flex flex-lg-row flex-column align-items-start w-100  ">
+            <!-- Description -->
+            <div class="description mb-4">
+              <h2>The British College</h2>
+              <p>
+                We are a world-class college in Nepal that offers British and
+                international qualifications that equip our graduates with the
+                knowledge, skills, and values they need to become creative
+                entrepreneurs and achieve success in the global job market.
+              </p>
+            </div>
+
+
+            <div class="d-flex flex-row flex-md-row gap-4 w-100">
+
+              <div class="quick-links ">
+                <h2>Quick Links</h2>
+                <div class="nav-link d-flex flex-column p-2">
+                  <a href="#">Home</a>
+                  <a href="#">About Us</a>
+                  <a href="#">Programs</a>
+                  <a href="#">Contact</a>
                 </div>
-                <div class="address p-2">
-                  <div class="d-flex align-items-center gap-3">
-                    <i class="fa-solid fa-phone gap-3"></i>
-                    <p class="m-1">CONTACT</p>
-                  </div>
-                  <p class="text-secondary m-0">
-                    +977 (1) 5970003 / +977 9823576995
-                  </p>
-                </div>
-                <div class="address p-2">
-                  <div class="d-flex align-items-center gap-3">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p class="m-1">EMAIL</p>
-                  </div>
-                  <p class="text-secondary m-0">
-                    info@thebritishcollege.edu.np
-                  </p>
-                </div>
-                <div class="address p-2">
-                  <div class="d-flex align-items-center gap-3">
-                    <i class="fa-regular fa-clock"></i>
-                    <p class="m-1">OPENING HOURS</p>
-                  </div>
-                  <p class="text-secondary m-0">Sunday-Friday(9am -5pm)</p>
+              </div>
+
+              <!-- Quick Links 2 -->
+              <div class="quick-links flex-fill">
+                <h2>Quick Links</h2>
+                <div class="nav-link d-flex flex-column p-2">
+                  <a href="#">Home</a>
+                  <a href="#">About Us</a>
+                  <a href="#">Programs</a>
+                  <a href="#">Contact</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-7 col-md-12">
-              <form action="#" class="row gap-3">
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  class="col-md-12 p-3" />
+          </div>
 
-                <input type="text" placeholder="Last Name" class="col-md-12 p-3" />
+          <div class="gap-4 d-flex text-light mt-5">
+            <i class="fa-brands fa-facebook-f icons-value d-flex justify-content-center align-items-center"
+              style="background-color: #2366aa"></i>
+            <i class="fa-brands fa-instagram icons-value d-flex justify-content-center align-items-center"
+              style="background-color: red"></i>
+            <i class="fa-brands fa-x-twitter icons-value d-flex justify-content-center align-items-center"
+              style="background-color: #1da1f2"></i>
+            <i class="fa-brands fa-linkedin icons-value d-flex justify-content-center align-items-center"
+              style="background-color: #0274b3"></i>
+            <i class="fa-brands fa-youtube icons-value d-flex justify-content-center align-items-center"
+              style="background-color: #ff0000"></i>
+          </div>
 
-                <input
-                  type="phone"
-                  placeholder="Phone Number"
-                  class="p-3 col-md12" />
-                <input type="text" placeholder="Subject" class="p-3 col-md-12" />
-
-                <select
-                  name="cars"
-                  id="cars"
-                  class="col-md-12 p-3 text-secondary border-0 border-bottom">
-                  <option value="volvo">Select Course</option>
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-                <button
-                  type="submit"
-                  class="button1 p-3 col-12 border-0 text-light"
-                  style="background-color: #17a8df">
-                  Submit
+          <div class="newsletter">
+            <h2>Subscribe Newsletters</h2>
+            <form action="#">
+              <div class="row gap-3 ">
+                <input type="email" placeholder="Your email address" class="col-md-8 p-3" />
+                <button type="submit" class="col-md-3 button1 p-0 m-0">
+                  Subscribe
                 </button>
-              </form>
-            </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="map p-3 mt-3">
+            <img src="Images/map.svg" alt />
           </div>
         </div>
       </div>
     </div>
-    <!--map and Form-->
-    <div class="row mt-4"> 
-      <div class="col-lg-4  gx-5 height2">
-        <div class="row gap-2">
-          <section>ACCOUNTS DEPARTMENT</section>
-          <div class="d-flex align-items-center gap-3">
-            <i class="fa-regular fa-envelope"></i>
-            <span>man@thebritishcollege.edu.np</span>
-          </div>
+  </footer>
 
-          <div class="d-flex gap-3">
-            <i class="fa-solid fa-phone"></i>
-            <p class="m-0">9867396900</p>
-          </div>
-          <div class="d-flex gap-3">
-            <i class="fa-regular fa-clock"></i>
-            <p>9:30 AM -5:00PM</p>
-          </div>
-        </div>
-        <div class="row gap-2">
-          <section>ACCOUNTS DEPARTMENT</section>
-          <div class="d-flex align-items-center gap-3">
-            <i class="fa-regular fa-envelope"></i>
-            <span>man@thebritishcollege.edu.np</span>
-          </div>
-
-          <div class="d-flex gap-3">
-            <i class="fa-solid fa-phone gap-3"></i>
-            <p class="m-0">9867396900</p>
-          </div>
-          <div class="d-flex gap-3">
-            <i class="fa-regular fa-clock"></i>
-            <p>9:30 AM -5:00PM</p>
-          </div>
-        </div>
-        <div class="row gap-2">
-          <section>ACCOUNTS DEPARTMENT</section>
-          <div class="d-flex align-items-center gap-3">
-            <i class="fa-regular fa-envelope"></i>
-            <span>man@thebritishcollege.edu.np</span>
-          </div>
-
-          <div class="d-flex gap-3">
-            <i class="fa-solid fa-phone"></i>
-            <p class="m-0">9867396900</p>
-          </div>
-          <div class="d-flex gap-3">
-            <i class="fa-regular fa-clock"></i>
-            <p>9:30 AM -5:00PM</p>
-          </div>
-        </div>
-        <div class="row gap-2">
-          <section>ACCOUNTS DEPARTMENT</section>
-          <div class="d-flex align-items-center gap-3">
-            <i class="fa-regular fa-envelope"></i>
-            <span>man@thebritishcollege.edu.np</span>
-          </div>
-
-          <div class="d-flex gap-3">
-            <i class="fa-solid fa-phone"></i>
-            <p class="m-0">9867396900</p>
-          </div>
-          <div class="d-flex gap-3">
-            <i class="fa-regular fa-clock"></i>
-            <p>9:30 AM -5:00PM</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-8">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.8157104896368!2d85.31946625539202!3d27.69236175017614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b19295555f%3A0xabfe5f4b310f97de!2sThe%20British%20College%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1756718742117!5m2!1sen!2snp"
-          width="100%"
-          height="100%"
-          style="border: 0"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-
-    <!--Next Steps-->
- <div class="row mt-5 ">
-      <div class="col-md-7 ">
-        <img src="Images/image_dd.png" alt class="w-100 " />
-      </div>
-      <div
-        class=" col-md-5 first-bar d-flex flex-column justify-content-center ">
-        <p>Ready to take <br />the next step?</p>
-        <div class="row">
-          <div class="col-auto">
-            <button
-              type="button"
-              class="button1 button-color"
-              style="background-color: #2e438e; color: white">
-              Apply Now
-            </button>
-          </div>
-          <div class="col-auto">
-            <button
-              type="button"
-              class="button1 button-color"
-              style="border: 1px solid white; color: white">
-              Visit Us
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--FOOTER -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-7">
-            <div class="first-links d-flex">
-              <div class="description">
-                <h2>The British College</h2>
-                <p>
-                  We are a world-class college in Nepal that
-                  <br />
-                  offers British and international qualifications
-                  <br />
-                  that equip our graduates with the knowledge,<br />
-                  skills, and values they need to become creative
-                  <br />
-                  entrepreneurs and achieve success in the
-                  <br />
-                  global job market.
-                </p>
-              </div>
-              <div class="quick-links">
-                <h2>Quick Links</h2>
-                <div class="nav-link d-flex flex-column p-2">
-                  <a href="#">Home</a>
-                  <a href="#">About Us</a>
-                  <a href="#">Programs</a>
-                  <a href="#">Contact</a>
-                </div>
-              </div>
-              <div class="quick-links">
-                <h2>Quick Links</h2>
-                <div class="nav-link d-flex flex-column p-2">
-                  <a href="#">Home</a>
-                  <a href="#">About Us</a>
-                  <a href="#">Programs</a>
-                  <a href="#">Contact</a>
-                </div>
-              </div>
-            </div>
-            <div class="gap-4 d-flex text-light mt-5">
-              <i
-                class="fa-brands fa-facebook-f icons-value d-flex justify-content-center align-items-center"
-                style="background-color: #2366aa"></i>
-              <i
-                class="fa-brands fa-instagram icons-value d-flex justify-content-center align-items-center"
-                style="background-color: red"></i>
-              <i
-                class="fa-brands fa-x-twitter icons-value d-flex justify-content-center align-items-center"
-                style="background-color: #1da1f2"></i>
-              <i
-                class="fa-brands fa-linkedin icons-value d-flex justify-content-center align-items-center"
-                style="background-color: #0274b3"></i>
-              <i
-                class="fa-brands fa-youtube icons-value d-flex justify-content-center align-items-center"
-                style="background-color: #ff0000"></i>
-            </div>
-
-            <div class="newsletter">
-              <h2>Subscribe Newsletters</h2>
-              <form action="#">
-                <div class="row gap-3">
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    class="col-8 p-3" />
-                  <button type="submit" class="col-3 button1 p-0 m-0">
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-5">
-            <div class="map p-3 mt-3">
-              <img src="Images/map.svg" alt style="height: 500px" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-   <div class="p-3 ">
-      <div class="container ">
-        <div class="row bottom-footer g-3">
-       <div class="contact-number col-md-3 d-flex align-items-center justify-content-center
+  <div class="p-3 ">
+    <div class="container ">
+      <div class="row bottom-footer g-3">
+        <div class="contact-number col-md-3 d-flex align-items-center justify-content-center
         position-relative">
-            <i
-              class="fa-solid fa-phone p-3 d-flex justify-content-center align-items-center text-light width-fit"
-            ></i>
-            <div class="position-absolute call text-info">Call us Now</div>
+          <i class="fa-solid fa-phone p-3 d-flex justify-content-center align-items-center text-light width-fit"></i>
+          <div class="position-absolute call text-info">Call us Now</div>
 
-            <p class="m-0">+977 9867396900</p>
-          </div>
-          <div class="col-md-3"></div>
-          <div class="college-logo col-md-6">
-            <div class="row g-3">
-              <div class="col-auto">
-                <img src="Images/uwe.png" alt />
-              </div>
-
-              <div class="col-auto"><img src="Images/leeds.jpeg" alt /></div>
-              <div class="col-auto"><img src="Images/kellee.png" alt /></div>
-              <div class="col-auto"><img src="Images/acca.png" alt /></div>
-              <div class="col-auto"><img src="Images/acca.png" alt /></div>
-              <div class="col-auto"><img src="Images/cambridge.png" alt /></div>
-            </div>
-          </div>
+          <p class="m-0">+977 9867396900</p>
         </div>
-        <hr />
-        <div class="row ">
-          <div class="contact-number col-md-3">@2023 terms and conditions</div>
-          <div class="col-md-3"></div>
-          <ul class="col-md-6 d-flex flex-wrap  gap-3 order-list">
-            <div class="col-auto"><li>Terms & conditions</li></div>
-            <div class="col-auto"><li>Privacy Policy</li></div>
-            <div class="col-auto"><li>Cookie Policy</li></div>
-            <div class="col-auto"><li>Disclaimer</li></div>
-            <div class="col-auto"><li>Help Center</li></div>
-            <div class="col-auto"><li>Contact Us</li></div>
-          </ul>
+        <div class="col-md-3"></div>
+        <div class="college-logo col-md-6">
+          <div class="row g-3">
+            <div class="col-auto">
+              <img src="Images/uwe.png" alt />
+            </div>
+
+            <div class="col-auto"><img src="Images/leeds.jpeg" alt /></div>
+            <div class="col-auto"><img src="Images/kellee.png" alt /></div>
+            <div class="col-auto"><img src="Images/acca.png" alt /></div>
+            <div class="col-auto"><img src="Images/acca.png" alt /></div>
+            <div class="col-auto"><img src="Images/cambridge.png" alt /></div>
+          </div>
         </div>
       </div>
+      <hr />
+      <div class="row ">
+        <div class="contact-number col-md-3">@2023 terms and conditions</div>
+        <div class="col-md-3"></div>
+        <ul class="col-md-6 d-flex flex-wrap  gap-3 order-list">
+          <div class="col-auto">
+            <li>Terms & conditions</li>
+          </div>
+          <div class="col-auto">
+            <li>Privacy Policy</li>
+          </div>
+          <div class="col-auto">
+            <li>Cookie Policy</li>
+          </div>
+          <div class="col-auto">
+            <li>Disclaimer</li>
+          </div>
+          <div class="col-auto">
+            <li>Help Center</li>
+          </div>
+          <div class="col-auto">
+            <li>Contact Us</li>
+          </div>
+        </ul>
+      </div>
     </div>
+  </div>
 
-  
-  </body>
+
+</body>
+
 </html>
