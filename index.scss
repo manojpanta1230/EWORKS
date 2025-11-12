@@ -389,14 +389,17 @@ nav {
     background-color: white;
     transition: background-color 0.6s ease;
     border: 1px solid $primary-color;
+ 
+    
 
 
     a {
         position: relative;
         z-index: 1;
         text-decoration: none;
-        color: black;
+        color: var(--border-color);
         transition: color 0.6s ease;
+        font-weight: $font-weight +200;
     }
 
 
@@ -1271,6 +1274,18 @@ input:focus {
      
         width: 100%;
     }
+ .square-div{   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+ }
+.box-div{   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    img{
+     object-fit: cover;
+    }
+
+}
 
     footer {
         .container {

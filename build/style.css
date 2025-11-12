@@ -320,8 +320,9 @@ nav a {
   position: relative;
   z-index: 1;
   text-decoration: none;
-  color: black;
+  color: var(--border-color);
   transition: color 0.6s ease;
+  font-weight: 600;
 }
 .border1::before {
   content: "";
@@ -1058,6 +1059,17 @@ input:focus {
   .contact {
     right: 0;
     width: 100%;
+  }
+  .square-div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+  }
+  .box-div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+  }
+  .box-div img {
+    object-fit: cover;
   }
   footer .container .row {
     flex-direction: column;
