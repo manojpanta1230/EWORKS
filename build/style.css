@@ -101,7 +101,6 @@ nav a {
 }
 
 .long-card {
-  height: 336px;
   border: 1px solid #2D358C;
   padding: 10px;
   color: #2D358C;
@@ -1060,6 +1059,9 @@ input:focus {
     right: 0;
     width: 100%;
   }
+  .arrow1 {
+    left: -84%;
+  }
   .square-div {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 150px);
@@ -1070,9 +1072,20 @@ input:focus {
   }
   .box-div img {
     object-fit: cover;
+    height: fit-content;
   }
   footer .container .row {
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .arrow1 {
+    left: -100%;
+  }
+}
+@media (max-width: 576px) {
+  .arrow1 {
+    left: -147%;
   }
 }
 .modal-value {

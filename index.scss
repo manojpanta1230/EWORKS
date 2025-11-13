@@ -133,10 +133,8 @@ nav {
 
 .long-card {
 
-    height: $font-size + 321px;
     border: 1px solid $primary_color;
     padding: $fixed_margin;
-
     color: $primary_color;
     gap: $fixed_gap + 10px;
 
@@ -1274,6 +1272,12 @@ input:focus {
      
         width: 100%;
     }
+    .arrow1{
+        left: -84%;
+        
+
+    }
+ 
  .square-div{   
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 150px);
@@ -1283,6 +1287,7 @@ input:focus {
     grid-template-rows: repeat(2, 150px);
     img{
      object-fit: cover;
+     height: fit-content;
     }
 
 }
@@ -1297,7 +1302,18 @@ input:focus {
         }
     }
 }
+@media (max-width:768px) {
+    .arrow1 {
+        left:-100%;
 
+    }   
+}
+@media (max-width:576px) {
+    .arrow1 {
+        left:-147%;
+
+    }   
+}
 .modal-value {
     background-color: $primary-color;
 
