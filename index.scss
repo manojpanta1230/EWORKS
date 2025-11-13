@@ -10,6 +10,10 @@ body {
     font-family: $primary-font;
     overflow-x: hidden;
 
+  }
+
+
+
     .first-row {
         background-color: $primary-color;
         gap: $fixed_gap - 4px;
@@ -18,10 +22,6 @@ body {
         overflow-x: hidden;
 
     }
-
-
-
-}
 
 .top-bar {
     height: 12rem;
@@ -724,7 +724,7 @@ footer {
 
 .advisory-card {
     background: $light-gray;
-    width: 252px;
+    
     height: 334px;
 
     img {
@@ -1307,6 +1307,10 @@ input:focus {
         left:-100%;
 
     }   
+    .first-row{
+    flex-wrap: none;
+    flex-direction: column;
+    }
 }
 @media (max-width:576px) {
     .arrow1 {

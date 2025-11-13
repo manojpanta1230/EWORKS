@@ -16,7 +16,8 @@ body {
   font-family: "HelveticaNowText", sans-serif;
   overflow-x: hidden;
 }
-body .first-row {
+
+.first-row {
   background-color: #2D358C;
   gap: 6px;
   height: 100vh;
@@ -591,7 +592,6 @@ footer {
 
 .advisory-card {
   background: rgba(16, 16, 17, 0.0392156863);
-  width: 252px;
   height: 334px;
 }
 .advisory-card img {
@@ -1081,6 +1081,10 @@ input:focus {
 @media (max-width: 768px) {
   .arrow1 {
     left: -100%;
+  }
+  .first-row {
+    flex-wrap: none;
+    flex-direction: column;
   }
 }
 @media (max-width: 576px) {
