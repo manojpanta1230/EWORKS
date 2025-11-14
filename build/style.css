@@ -1047,13 +1047,16 @@ input:focus {
 }
 
 @media (max-width: 992px) {
-  ul li {
+  main ul li {
     display: none;
+  }
+  .sub-nav ul li a {
+    display: flex;
   }
   .navtab1 ul li {
     display: flex;
   }
-  ul li:nth-last-child(-n+2) {
+  main ul li:nth-last-child(-n+2) {
     display: inline-block;
   }
   .contact {
@@ -1099,6 +1102,31 @@ input:focus {
 
 .address-bar {
   background-color: #D1E7EF;
+}
+
+.modal-header, .modal-body {
+  border: none !important;
+}
+
+.link-group h2 {
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.link-item {
+  color: #FFFFFF;
+  padding: 8px, 4px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  transition: 0.15s ease-in-out, padding-left 0.15s ease-in-out;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.modal-title {
+  font-weight: 600 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

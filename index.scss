@@ -10,18 +10,18 @@ body {
     font-family: $primary-font;
     overflow-x: hidden;
 
-  }
+}
 
 
 
-    .first-row {
-        background-color: $primary-color;
-        gap: $fixed_gap - 4px;
-        height: 100vh;
-        flex-wrap: nowrap;
-        overflow-x: hidden;
+.first-row {
+    background-color: $primary-color;
+    gap: $fixed_gap - 4px;
+    height: 100vh;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
 
-    }
+}
 
 .top-bar {
     height: 12rem;
@@ -250,8 +250,8 @@ nav {
 
     &:hover {
         background-color: $light-blue;
-       
-          transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     img {
@@ -387,8 +387,8 @@ nav {
     background-color: white;
     transition: background-color 0.6s ease;
     border: 1px solid $primary-color;
- 
-    
+
+
 
 
     a {
@@ -463,7 +463,8 @@ nav {
 
 .first-bar {
     background-color: $light-blue;
-     padding: $fixed_margin + 40px;
+    padding: $fixed_margin + 40px;
+
     p {
         font-size: $font_size + 33px;
         color: $secondary-color;
@@ -724,7 +725,7 @@ footer {
 
 .advisory-card {
     background: $light-gray;
-    
+
     height: 334px;
 
     img {
@@ -1254,9 +1255,20 @@ input:focus {
 }
 
 @media (max-width: 992px) {
-    ul li {
-        display: none;
+    main {
+        ul li {
+            display: none;
+        }
     }
+
+    .sub-nav {
+        ul li a {
+            display: flex;
+        }
+    }
+
+    
+
 
     .navtab1 {
         ul li {
@@ -1264,33 +1276,39 @@ input:focus {
         }
     }
 
-    ul li:nth-last-child(-n + 2) {
-        display: inline-block;
+    main {
+        ul li:nth-last-child(-n + 2) {
+            display: inline-block;
+        }
     }
-    .contact{
+
+    .contact {
         right: 0;
-     
+
         width: 100%;
     }
-    .arrow1{
+
+    .arrow1 {
         left: -84%;
-        
+
 
     }
- 
- .square-div{   
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 150px);
- }
-.box-div{   
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 150px);
-    img{
-     object-fit: cover;
-     height: fit-content;
+
+    .square-div {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 150px);
     }
 
-}
+    .box-div {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 150px);
+
+        img {
+            object-fit: cover;
+            height: fit-content;
+        }
+
+    }
 
     footer {
         .container {
@@ -1302,27 +1320,58 @@ input:focus {
         }
     }
 }
+
 @media (max-width:768px) {
     .arrow1 {
-        left:-100%;
+        left: -100%;
 
-    }   
-    .first-row{
-    flex-wrap: none;
-    flex-direction: column;
+    }
+
+    .first-row {
+        flex-wrap: none;
+        flex-direction: column;
     }
 }
+
 @media (max-width:576px) {
     .arrow1 {
-        left:-147%;
+        left: -147%;
 
-    }   
+    }
 }
+
 .modal-value {
     background-color: $primary-color;
 
 }
+
 .address-bar {
-   background-color: $light-color;
-   
+    background-color: $light-color;
+
 }
+.modal-header, .modal-body {
+            border: none !important;
+        }
+
+        .link-group h2 {
+            font-weight: $font-weight + 300;
+            color: $secondary-color;
+            text-transform: uppercase;
+            font-size: $font-size + 9 ; 
+        }
+
+        .link-item {
+         
+            color: $secondary-color;
+            padding: $fixed_gap - 2, $fixed_gap - 6;
+            margin-bottom: $fixed_gap - 6;
+            font-size: $font-size + 3;
+            transition:  0.15s ease-in-out, padding-left 0.15s ease-in-out;
+            border-radius: $fixed_gap - 4; 
+            text-decoration: none;
+        }
+
+        .modal-title {
+           
+            font-weight: $font-weight +200 !important;
+        }
