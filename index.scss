@@ -1255,17 +1255,12 @@ input:focus {
 }
 
 @media (max-width: 992px) {
-    main {
+   
         ul li {
             display: none;
         }
-    }
+ 
 
-    .sub-nav {
-        ul li a {
-            display: flex;
-        }
-    }
 
     
 
@@ -1276,11 +1271,11 @@ input:focus {
         }
     }
 
-    main {
+  
         ul li:nth-last-child(-n + 2) {
             display: inline-block;
         }
-    }
+  
 
     .contact {
         right: 0;
