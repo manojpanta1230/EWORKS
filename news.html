@@ -1,1404 +1,1318 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta charset="UTF-8" />
-    <link
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      rel="stylesheet" />
-    <script
-      crossorigin="anonymous"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <link
-      crossorigin="anonymous"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      referrerpolicy="no-referrer"
-      rel="stylesheet" />
-    <link href="build/style.css" rel="stylesheet" />
-    <link
-      crossorigin="anonymous"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      referrerpolicy="no-referrer"
-      rel="stylesheet" />
-    <link
-      crossorigin="anonymous"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      referrerpolicy="no-referrer"
-      rel="stylesheet" />
-    <!-- <script src="js/slider.js"></script> -->
-    <script
-      crossorigin="anonymous"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      referrerpolicy="no-referrer"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script
-      crossorigin="anonymous"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      referrerpolicy="no-referrer"
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link href="Images/logo.svg" rel="icon" type="image/x-icon" />
 
-    <title>News & Events</title>
-  </head>
-  <body>
-    <div class="container z-1000 position-relative">
-      <nav>
-        <div class="position-absolute top-0 end-0" style="z-index: -1">
-          <img src="Images/Vector.svg" alt />
-        </div>
-        <a href="index.html"><img src="Images/Blacklogo.png"
-            alt="Eworks Logo" /></a>
-        <ul>
-          <li><a href="aboutus.html">About</a></li>
-          <li><a href="course.html">Courses</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact_us.html">Contact</a></li>
-          <li>
-            <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal"
-              data-bs-target="#myModal" style="cursor: pointer;"></i>
-          </li>
-       <li>
-<i class="fa-solid fa-bars" data-bs-toggle="modal" data-bs-target="#myModal2" style="cursor: pointer;"></i>
-</li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta charset="UTF-8" />
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" rel="stylesheet" />
+  <script crossorigin="anonymous" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    referrerpolicy="no-referrer" rel="stylesheet" />
+  <link href="build/style.css" rel="stylesheet" />
+  <link crossorigin="anonymous"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    referrerpolicy="no-referrer" rel="stylesheet" />
+  <link crossorigin="anonymous"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    referrerpolicy="no-referrer" rel="stylesheet" />
+  <!-- <script src="js/slider.js"></script> -->
+  <script crossorigin="anonymous"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script crossorigin="anonymous"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    referrerpolicy="no-referrer"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link href="Images/logo.svg" rel="icon" type="image/x-icon" />
 
-      <div class="p-3">
-        <nav aria-label="breadcrumb" class="p-2">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Home</a>
-            </li>
-            <li aria-current="page" class="breadcrumb-item active">News</li>
-          </ol>
-        </nav>
+  <title>News & Events</title>
+</head>
+
+<body>
+  <div class="container z-1000 position-relative">
+    <nav>
+      <div class="position-absolute top-0 end-0" style="z-index: -1">
+        <img src="Images/Vector.svg" alt />
       </div>
-      <div class="modal fade" id="myModal" tabindex="-1"
-        aria-labelledby="myModalLabel" aria-hidden="true"
-        data-bs-backdrop="false">
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="myModalLabel"> I am Looking For </h5>
-              <!-- Close button -->
-              <button type="button" class="btn-close" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
+      <a href="index.html"><img src="Images/Blacklogo.png" alt="Eworks Logo" /></a>
+      <ul>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+        <li>
+          <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#myModal"
+            style="cursor: pointer;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-bars" data-bs-toggle="modal" data-bs-target="#myModal2" style="cursor: pointer;"></i>
+        </li>
+      </ul>
+    </nav>
 
-            </div>
+    <div class="p-3">
+      <nav aria-label="breadcrumb" class="p-2">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li aria-current="page" class="breadcrumb-item active">News</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"
+      data-bs-backdrop="false">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel"> I am Looking For </h5>
+            <!-- Close button -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
           </div>
         </div>
       </div>
-            <div class="modal fade modal-value" id="myModal2" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-backdrop="false">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header modal-value">
-        <h5 class="modal-title text-light" id="myModalLabel" > Welcome </h5>
-        <!-- Close button -->
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+  <div class="modal fade modal-value" id="myModal2" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-backdrop="false">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content modal-value shadow-2xl">
+                <!-- Modal Header -->
+                <div class="modal-header modal-value border-bottom border-indigo-400">
+                    <h5 class="modal-title text-light font-bold text-xl md:text-2xl" id="myModalLabel">Welcome</h5>
+                    <!-- Close button -->
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                
+                <div class="modal-body modal-value p-6 md:p-12">
+
+                  
+                    <div class="container-fluid">
+                        <div class="row mb-12">
+
+                          
+                            <div class="col-6 col-md-3 mb-6 link-group d-flex gap-3 flex-column">
+                                <h2>About Us</h2>
+                                <a href="aboutus.html" class="link-item d-block">About TBC</a>
+                                <a href="#" class="link-item d-block">TBC Team</a>
+                                <a href="#" class="link-item d-block">TBC Partner</a>
+                                <a href="contact_us.html" class="link-item d-block">Contact</a>
+                                <a href="#" class="link-item d-block">Career</a>
+                            </div>
+
+                            <!-- Column 2: Life At TBC -->
+                            <div class="col-6 col-md-3 mb-6 link-group d-flex gap-3 flex-column">
+                                <h2>Life At TBC</h2>
+                                <a href="#" class="link-item d-block">Academic Success Center</a>
+                                <a href="counselling_wellbeing.html" class="link-item d-block">Well Being Unit</a>
+                                <a href="#" class="link-item d-block">Incubation Center (BHM)</a>
+                                <a href="#" class="link-item d-block">Sport</a>
+                                <a href="#" class="link-item d-block">Clubs & Community</a>
+                                <a href="#" class="link-item d-block">Opportunities</a>
+                                <a href="#" class="link-item d-block">Summer Academy</a>
+                            </div>
+                            <!-- Column 3: Update Now -->
+                            <div class="col-6 col-md-3 mb-6 link-group d-flex gap-3 flex-column">
+                                <h2>Update Now</h2>
+                                <a href="news.html" class="link-item d-block">News</a>
+                                <a href="#" class="link-item d-block">Blog</a>
+                                <a href="#" class="link-item d-block">Event</a>
+                                <a href="gallery.html" class="link-item d-block">Gallery</a>
+                                <a href="#" class="link-item d-block">Virtual Tour</a>
+                            </div>
+                            <!-- Column 4: Student -->
+                            <div class="col-6 col-md-3 mb-6 link-group d-flex gap-3 flex-column">
+                                <h2>Student</h2>
+                                <a href="#" class="link-item d-block">Alumni</a>
+                                <a href="#" class="link-item d-block">Visa Process</a>
+                                <a href="#" class="link-item d-block">Arrival Information</a>
+                                <a href="#" class="link-item d-block">Gallery</a>
+                                <a href="#" class="link-item d-block">International Students</a>
+                                <a href="#" class="link-item d-block">Feedback</a>
+                                <a href="#" class="link-item d-block">Downloads</a>
+                                <a href="#" class="link-item d-block">Results</a>
+                            </div>
+                        </div>
+                      </div>
+                    <!-- Horizontal Separator -->
+                    <hr class="border-indigo-500 my-8">
+
+                    <!-- Section 2: Postgrad Programme / Other Courses Links (3 Columns) -->
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <!-- Column 5: Bachelor Degree (Links from the bottom-left section of the image) -->
+                            <div class="col-md-4 mb-6 link-group d-flex gap-3 flex-column">
+                                <h2>Bachelor Degree</h2>
+                                <a href="#" class="link-item d-block">BSc (Hons) Computing</a>
+                                <a href="#" class="link-item d-block">BSc (Hons) Data Science</a>
+                                <a href="#" class="link-item d-block">BSc (Hons) Cyber Security and Digital Forensics</a>
+                                <a href="#" class="link-item d-block">BSc (Hons) Artificial Intelligence</a>
+                                <a href="#" class="link-item d-block">BBA (Hons) Business and Management</a>
+                                <a href="#" class="link-item d-block">BA (Hons) Hospitality Management</a>
+                            </div>
+
+                            <!-- Column 6: Master Degree -->
+                            <div class="col-md-4 mb-6 link-group d-flex gap-3 flex-column">
+                                <h2>Master Degree</h2>
+                                <a href="#" class="link-item d-block">Weekend MBA (Executive)</a>
+                                <a href="#" class="link-item d-block">MBA (Graduate)</a>
+                                <a href="#" class="link-item d-block">MSc Information and Technology</a>
+                                <a href="#" class="link-item d-block">MSc Advanced Computer Science</a>
+                            </div>
+
+                            <!-- Column 7: Other Courses -->
+                            <div class="col-md-4 mb-6 link-group d-flex gap-3 flex-column">
+                                <h2>Other Courses</h2>
+                                <a href="#" class="link-item d-block">GCE A Level</a>
+                                <a href="#" class="link-item d-block">ACCA Programme</a>
+                                <a href="#" class="link-item d-block">Level 2 Diploma in Food Preparation</a>
+                                <a href="#" class="link-item d-block">PTE</a>
+                                <a href="#" class="link-item d-block">Coding Camp</a>
+                            </div>
+                        </div>
+                    </div>
+
+           
+
+                </div>
+                <!-- End Modal Body -->
+            </div>
+        </div>
+    </div>
+    <div class="simple">
+      <h2>News & Events</h2>
+    </div>
+
+    <!--Navtab-->
+
+    <div class="navtab1 mt-4 ">
+      <ul class="nav nav-pills mb-3 gap-2 justify-content-center justify-content-md-start flex-nowrap overflow-auto"
+        id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            All
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+            Events
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+            News
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-industry-tab" data-bs-toggle="pill" data-bs-target="#pills-industry"
+            type="button" role="tab" aria-controls="pills-industry" aria-selected="false">
+            Blog
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <!--Tab-->
+      <div aria-labelledby="pills-home-tab" class="tab-pane fade show active" id="pills-home" role="tabpanel">
+        <div class="row mt-4 g-3">
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Pagination-->
+        <nav aria-label="Page navigation example" class="mt-4 d-flex justify-content-center">
+          <ul class="pagination pagination1">
+            <li class="page-item">
+              <a aria-label="Previous" class="page-link" href="#">
+                <span aria-hidden="true">
+                  <i class="fas fa-angle-left"></i>
+                </span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link active" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item">
+              <a aria-label="Next" class="page-link" href="#">
+                <span aria-hidden="true">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="modal-body modal-value">
-      
+
+      <div aria-labelledby="pills-profile-tab" class="tab-pane fade" id="pills-profile" role="tabpanel">
+        <div class="row mt-4 g-3">
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example" class="mt-4 d-flex justify-content-center">
+          <ul class="pagination pagination1">
+            <li class="page-item">
+              <a aria-label="Previous" class="page-link" href="#">
+                <span aria-hidden="true">
+                  <i class="fas fa-angle-left"></i>
+                </span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link active" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item">
+              <a aria-label="Next" class="page-link" href="#">
+                <span aria-hidden="true">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div aria-labelledby="pills-contact-tab" class="tab-pane fade" id="pills-contact" role="tabpanel">
+        <div class="row mt-4 g-3">
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example" class="mt-4 d-flex justify-content-center">
+          <ul class="pagination pagination1">
+            <li class="page-item">
+              <a aria-label="Previous" class="page-link" href="#">
+                <span aria-hidden="true">
+                  <i class="fas fa-angle-left"></i>
+                </span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link active" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item">
+              <a aria-label="Next" class="page-link" href="#">
+                <span aria-hidden="true">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div aria-labelledby="pills-industry-tab" class="tab-pane fade" id="pills-industry" role="tabpanel">
+        <div class="row mt-4 g-3">
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 card-details">
+              <div class="position-relative">
+                <img alt="AI Dengue" class="card-img-top" src="Images/datascience.png" />
+                <div class="card-date">
+                  07
+                  <span>Sep</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Could AI Be the Answer to the Dengue Epidemic?
+                </h5>
+                <p class="card-text text-muted">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a class="news-badge" href="#">News</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example" class="mt-4 d-flex justify-content-center">
+          <ul class="pagination pagination1">
+            <li class="page-item">
+              <a aria-label="Previous" class="page-link" href="#">
+                <span aria-hidden="true">
+                  <i class="fas fa-angle-left"></i>
+                </span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link active" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item">
+              <a aria-label="Next" class="page-link" href="#">
+                <span aria-hidden="true">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
-</div>	
-      <div class="simple">
-        <h2>News & Events</h2>
-      </div>
 
-      <!--Navtab-->
-
-      <div class="navtab1 mt-4 ">
-        <ul
-          class="nav nav-pills mb-3 gap-2 justify-content-center justify-content-md-start flex-nowrap overflow-auto"
-          id="pills-tab"
-          role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-home"
-              type="button"
-              role="tab"
-              aria-controls="pills-home"
-              aria-selected="true">
-              All
-            </button>
-          </li>
-
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false">
-              Events
-            </button>
-          </li>
-
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false">
-              News
-            </button>
-          </li>
-
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-industry-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-industry"
-              type="button"
-              role="tab"
-              aria-controls="pills-industry"
-              aria-selected="false">
-              Blog
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="tab-content" id="pills-tabContent">
-        <!--Tab-->
-        <div
-          aria-labelledby="pills-home-tab"
-          class="tab-pane fade show active"
-          id="pills-home"
-          role="tabpanel">
-          <div class="row mt-4 g-3">
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Pagination-->
-          <nav
-            aria-label="Page navigation example"
-            class="mt-4 d-flex justify-content-center">
-            <ul class="pagination pagination1">
-              <li class="page-item">
-                <a aria-label="Previous" class="page-link" href="#">
-                  <span aria-hidden="true">
-                    <i class="fas fa-angle-left"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link active" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">4</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">5</a>
-              </li>
-              <li class="page-item">
-                <a aria-label="Next" class="page-link" href="#">
-                  <span aria-hidden="true">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div
-          aria-labelledby="pills-profile-tab"
-          class="tab-pane fade"
-          id="pills-profile"
-          role="tabpanel">
-          <div class="row mt-4 g-3">
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <nav
-            aria-label="Page navigation example"
-            class="mt-4 d-flex justify-content-center">
-            <ul class="pagination pagination1">
-              <li class="page-item">
-                <a aria-label="Previous" class="page-link" href="#">
-                  <span aria-hidden="true">
-                    <i class="fas fa-angle-left"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link active" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">4</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">5</a>
-              </li>
-              <li class="page-item">
-                <a aria-label="Next" class="page-link" href="#">
-                  <span aria-hidden="true">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div
-          aria-labelledby="pills-contact-tab"
-          class="tab-pane fade"
-          id="pills-contact"
-          role="tabpanel">
-          <div class="row mt-4 g-3">
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <nav
-            aria-label="Page navigation example"
-            class="mt-4 d-flex justify-content-center">
-            <ul class="pagination pagination1">
-              <li class="page-item">
-                <a aria-label="Previous" class="page-link" href="#">
-                  <span aria-hidden="true">
-                    <i class="fas fa-angle-left"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link active" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">4</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">5</a>
-              </li>
-              <li class="page-item">
-                <a aria-label="Next" class="page-link" href="#">
-                  <span aria-hidden="true">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div
-          aria-labelledby="pills-industry-tab"
-          class="tab-pane fade"
-          id="pills-industry"
-          role="tabpanel">
-          <div class="row mt-4 g-3">
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card1 card-details">
-                <div class="position-relative">
-                  <img
-                    alt="AI Dengue"
-                    class="card-img-top"
-                    src="Images/datascience.png" />
-                  <div class="card-date">
-                    07
-                    <span>Sep</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Could AI Be the Answer to the Dengue Epidemic?
-                  </h5>
-                  <p class="card-text text-muted">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a class="news-badge" href="#">News</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <nav
-            aria-label="Page navigation example"
-            class="mt-4 d-flex justify-content-center">
-            <ul class="pagination pagination1">
-              <li class="page-item">
-                <a aria-label="Previous" class="page-link" href="#">
-                  <span aria-hidden="true">
-                    <i class="fas fa-angle-left"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link active" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">4</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">5</a>
-              </li>
-              <li class="page-item">
-                <a aria-label="Next" class="page-link" href="#">
-                  <span aria-hidden="true">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <!--NEXT Steps-->
+  <div class="row mt-5 g-0">
+    <div class="col-md-7 p-0">
+      <img src="Images/image_dd.png" alt="" class="w-100 d-block" style="height: 100%; object-fit: cover;" />
     </div>
-
-    <!--NEXT Steps-->
-    <div class="row mt-5 ">
-      <div class="col-md-7 ">
-        <img src="Images/image_dd.png" alt class="w-100 " />
-      </div>
-      <div
-        class=" col-md-5 first-bar d-flex flex-column justify-content-center ">
-        <p>Ready to take <br />the next step?</p>
-        <div class="row">
-          <div class="col-auto">
-            <button
+    <div class="col-md-5 first-bar d-flex flex-column justify-content-center" >
+      <p style="color: white; font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 500; line-height: 1.2; margin-bottom: 20px;">
+        Ready to take <br />the next step?
+      </p>
+      <div class="d-flex flex-wrap gap-2">
+         <button
               type="button"
               class="button1 button-color"
               style="background-color: #2e438e; color: white">
               Apply Now
-            </button>
+            </button>          <button
+          type="button"
+          class="button1 button-color"
+          style="border: 1px solid white; color: white">
+          Visit Us
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 ">
+          <div class="first-links d-flex flex-lg-row flex-column align-items-start w-100  ">
+            <!-- Description -->
+            <div class="description mb-4">
+              <h2>The British College</h2>
+              <p>
+                We are a world-class college in Nepal that offers British and
+                international qualifications that equip our graduates with the
+                knowledge, skills, and values they need to become creative
+                entrepreneurs and achieve success in the global job market.
+              </p>
+            </div>
+
+            <div class="d-flex flex-row flex-md-row gap-4 w-100">
+
+              <div class="quick-links ">
+                <h2>Quick Links</h2>
+                <div class="nav-link d-flex flex-column p-2">
+                  <a href="#">Home</a>
+                  <a href="#">About Us</a>
+                  <a href="#">Programs</a>
+                  <a href="#">Contact</a>
+                </div>
+              </div>
+
+              <!-- Quick Links 2 -->
+              <div class="quick-links flex-fill">
+                <h2>Quick Links</h2>
+                <div class="nav-link d-flex flex-column p-2">
+                  <a href="#">Home</a>
+                  <a href="#">About Us</a>
+                  <a href="#">Programs</a>
+                  <a href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gap-4 d-flex text-light mt-5">
+            <i class="fa-brands fa-facebook-f icons-value d-flex justify-content-center align-items-center"
+              style="background-color: #2366aa"></i>
+            <i class="fa-brands fa-instagram icons-value d-flex justify-content-center align-items-center"
+              style="background-color: red"></i>
+            <i class="fa-brands fa-x-twitter icons-value d-flex justify-content-center align-items-center"
+              style="background-color: #1da1f2"></i>
+            <i class="fa-brands fa-linkedin icons-value d-flex justify-content-center align-items-center"
+              style="background-color: #0274b3"></i>
+            <i class="fa-brands fa-youtube icons-value d-flex justify-content-center align-items-center"
+              style="background-color: #ff0000"></i>
+          </div>
+
+          <div class="newsletter">
+            <h2>Subscribe Newsletters</h2>
+            <form action="#">
+              <div class="row gap-3 ">
+                <input type="email" placeholder="Your email address" class="col-md-8 p-3" />
+                <button type="submit" class="col-md-3 button1 p-0 m-0">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="map p-3 mt-3">
+            <img src="Images/map.svg" alt />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="p-3 ">
+    <div class="container ">
+      <div class="row bottom-footer g-3">
+        <div class="contact-number col-md-3 d-flex align-items-center justify-content-center
+        position-relative">
+          <i class="fa-solid fa-phone p-3 d-flex justify-content-center align-items-center text-light width-fit"></i>
+          <div class="position-absolute call text-info">Call us Now</div>
+
+          <p class="m-0">+977 9867396900</p>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="college-logo col-md-6">
+          <div class="row g-3">
+            <div class="col-auto">
+              <img src="Images/uwe.png" alt />
+            </div>
+
+            <div class="col-auto"><img src="Images/leeds.jpeg" alt /></div>
+            <div class="col-auto"><img src="Images/kellee.png" alt /></div>
+            <div class="col-auto"><img src="Images/acca.png" alt /></div>
+            <div class="col-auto"><img src="Images/acca.png" alt /></div>
+            <div class="col-auto"><img src="Images/cambridge.png" alt /></div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row ">
+        <div class="contact-number col-md-3">@2023 terms and conditions</div>
+        <div class="col-md-3"></div>
+        <ul class="col-md-6 d-flex flex-wrap  gap-3 order-list">
+          <div class="col-auto">
+            <li>Terms & conditions</li>
           </div>
           <div class="col-auto">
-            <button
-              type="button"
-              class="button1 button-color"
-              style="border: 1px solid white; color: white">
-              Visit Us
-            </button>
+            <li>Privacy Policy</li>
           </div>
-        </div>
+          <div class="col-auto">
+            <li>Cookie Policy</li>
+          </div>
+          <div class="col-auto">
+            <li>Disclaimer</li>
+          </div>
+          <div class="col-auto">
+            <li>Help Center</li>
+          </div>
+          <div class="col-auto">
+            <li>Contact Us</li>
+          </div>
+        </ul>
       </div>
     </div>
+  </div>
+  <script>
+    document.addEventListener("click", function (e) {
+      if (
+        e.target.classList.contains("page-link") &&
+        !e.target.hasAttribute("aria-label")
+      ) {
+        document
+          .querySelectorAll(".pagination1 .page-link")
+          .forEach((link) => link.classList.remove("active"));
+        e.target.classList.add("active");
+      }
+    });
+  </script>
+</body>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 ">
-            <div
-              class="first-links d-flex flex-lg-row flex-column align-items-start w-100  ">
-              <!-- Description -->
-              <div class="description mb-4">
-                <h2>The British College</h2>
-                <p>
-                  We are a world-class college in Nepal that offers British and
-                  international qualifications that equip our graduates with the
-                  knowledge, skills, and values they need to become creative
-                  entrepreneurs and achieve success in the global job market.
-                </p>
-              </div>
-
-              <div class="d-flex flex-row flex-md-row gap-4 w-100">
-
-                <div class="quick-links ">
-                  <h2>Quick Links</h2>
-                  <div class="nav-link d-flex flex-column p-2">
-                    <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Programs</a>
-                    <a href="#">Contact</a>
-                  </div>
-                </div>
-
-                <!-- Quick Links 2 -->
-                <div class="quick-links flex-fill">
-                  <h2>Quick Links</h2>
-                  <div class="nav-link d-flex flex-column p-2">
-                    <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Programs</a>
-                    <a href="#">Contact</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="gap-4 d-flex text-light mt-5">
-              <i
-                class="fa-brands fa-facebook-f icons-value d-flex justify-content-center align-items-center"
-                style="background-color: #2366aa"></i>
-              <i
-                class="fa-brands fa-instagram icons-value d-flex justify-content-center align-items-center"
-                style="background-color: red"></i>
-              <i
-                class="fa-brands fa-x-twitter icons-value d-flex justify-content-center align-items-center"
-                style="background-color: #1da1f2"></i>
-              <i
-                class="fa-brands fa-linkedin icons-value d-flex justify-content-center align-items-center"
-                style="background-color: #0274b3"></i>
-              <i
-                class="fa-brands fa-youtube icons-value d-flex justify-content-center align-items-center"
-                style="background-color: #ff0000"></i>
-            </div>
-
-            <div class="newsletter">
-              <h2>Subscribe Newsletters</h2>
-              <form action="#">
-                <div class="row gap-3 ">
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    class="col-md-8 p-3" />
-                  <button type="submit" class="col-md-3 button1 p-0 m-0">
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-5">
-            <div class="map p-3 mt-3">
-              <img src="Images/map.svg" alt />
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <div class="p-3 ">
-      <div class="container ">
-        <div class="row bottom-footer ">
-          <div
-            class="contact-number col-md-3 d-flex align-items-center position-relative">
-            <i
-              class="fa-solid fa-phone p-3 d-flex justify-content-center align-items-center text-light width-fit"></i>
-            <div class="position-absolute call text-info">Call us Now</div>
-
-            <p class="m-0">+977 9867396900</p>
-          </div>
-          <div class="col-md-3"></div>
-          <div class="college-logo col-md-6">
-            <div class="row g-3">
-              <div class="col-auto">
-                <img src="Images/uwe.png" alt />
-              </div>
-
-              <div class="col-auto"><img src="Images/leeds.jpeg" alt /></div>
-              <div class="col-auto"><img src="Images/kellee.png" alt /></div>
-              <div class="col-auto"><img src="Images/acca.png" alt /></div>
-              <div class="col-auto"><img src="Images/acca.png" alt /></div>
-              <div class="col-auto"><img src="Images/cambridge.png" alt /></div>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div class="row ">
-          <div class="contact-number col-md-3">@2023 terms and conditions</div>
-          <div class="col-md-3"></div>
-          <ul class="col-md-6 d-flex flex-wrap  gap-3 order-list">
-            <div class="col-auto"><li>Terms & conditions</li></div>
-            <div class="col-auto"><li>Privacy Policy</li></div>
-            <div class="col-auto"><li>Cookie Policy</li></div>
-            <div class="col-auto"><li>Disclaimer</li></div>
-            <div class="col-auto"><li>Help Center</li></div>
-            <div class="col-auto"><li>Contact Us</li></div>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <script>
-      document.addEventListener("click", function (e) {
-        if (
-          e.target.classList.contains("page-link") &&
-          !e.target.hasAttribute("aria-label")
-        ) {
-          document
-            .querySelectorAll(".pagination1 .page-link")
-            .forEach((link) => link.classList.remove("active"));
-          e.target.classList.add("active");
-        }
-      });
-    </script>
-  </body>
 </html>
