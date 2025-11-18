@@ -59,10 +59,6 @@ nav a {
 .text {
   z-index: 1000;
 }
-.text img {
-  position: relative;
-  top: -29%;
-}
 .text h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 78px;
@@ -362,6 +358,21 @@ nav a {
 }
 .arrow img {
   height: 100vh;
+  position: relative;
+  left: -100px;
+  /* start off-screen */
+  animation: slideIn 1s forwards, 2s 1s infinite;
+}
+.arrow {
+  /* Slide in from left */
+}
+@keyframes slideIn {
+  from {
+    left: 900px;
+  }
+  to {
+    left: -60px;
+  }
 }
 
 .slide {
@@ -1071,6 +1082,9 @@ input:focus {
   }
 }
 @media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
   .arrow1 {
     left: -100%;
   }

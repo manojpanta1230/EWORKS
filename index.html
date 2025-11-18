@@ -25,10 +25,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- AOS Animation Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
 </head>
 <body>
    <!--TOP BAR-->
-   <div class="row first-row ">
+   <div class="row first-row" >
       <div class="col-md-6 img-wrap ">
          <img src="Images/CollegePhoto.png" alt="Vector" class="img-fluid h-100 w-100">
       </div>
@@ -53,13 +56,14 @@
       <div class="arrow position-absolute">
          <img src="Images/arrow.svg" alt>
       </div>
-      <div class="arrow2 position-absolute">
+      <!-- <div class="arrow2 position-absolute">
          <img src="Images/arrow.svg" alt="Arrow Image">
-      </div>
+      </div> -->
    </div>
    <!--Navbar-->
    <div class="container z-1000 position-relative  ">
-      <nav>
+    <nav data-aos="fade-down" data-aos-duration="800">
+
          <div class="position-absolute top-0 end-0 color-changer"><img src="Images/Vector.svg" alt=""></div>
          <a href="index.html"><img src="Images/Blacklogo.png" alt="Eworks Logo"></a>
          <ul>
@@ -206,26 +210,26 @@
       <!--EXPERIMENTAL JOURNEY-->
       <div class="row g-3  padding-box ">
          <div class="col-md-4 row gap-2 ">
-            <div class="card d-flex flex-column justify-content-center align-items-start  ">
+            <div class="card d-flex flex-column justify-content-center align-items-start   " data-aos="fade-up" data-aos-delay="150">
                <img src="Images/Trophy.png" alt>
                <p>Academic Sucess Center</p>
             </div>
-            <div class="card d-flex flex-column justify-content-center align-items-start ">
+            <div class="card d-flex flex-column justify-content-center align-items-start " data-aos="fade-up" data-aos-delay="150">
                <img src="Images/Trophy.png" alt>
                <p>Counselling & Wellbeing Unit</p>
             </div>
-            <div class="card d-flex flex-column justify-content-center align-items-start ">
+            <div class="card d-flex flex-column justify-content-center align-items-start " data-aos="fade-right" data-aos-delay="300">
                <img src="Images/Trophy.png" alt>
                <p>Academic Sucess Center</p>
             </div>
          </div>
          <div class="col-md-3 d-flex flex-column justify-content-end ">
-            <div class="long-card d-flex flex-column justify-content-end align-items-start">
+            <div class="long-card d-flex flex-column justify-content-end align-items-start" data-aos="fade-right" data-aos-delay="300">
                <img src="Images/Trophy.png" alt>
                <p>Academic Sucess Center</p>
             </div>
          </div>
-         <div class="col-md-5  simple  d-flex flex-lg-column  justify-content-end align-items-start">
+         <div class="col-md-5  simple  d-flex flex-lg-column  justify-content-end align-items-start" data-aos="fade-down" data-aos-delay="400">
             <h2>
                Experimental
                <br>
@@ -244,9 +248,8 @@
    <div class="position-relative p-0 overflow-hidden z-1 padding-box img-container">
       <div class="container">
          <div class="simple position-relative z-1">
-            <h2>
-               Immersive <br> Experience
-            </h2>
+         <h2 data-aos="zoom-in">Immersive <br> Experience</h2>
+
             <p>
                Lorem Ipsum is simply dummy text of the <br>
                printing and typesetting industry. Lorem Ipsum <br>
@@ -868,8 +871,14 @@
          </div>
       </div>
    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 
    <script>
+        AOS.init({
+    duration: 1200,   // Animation speed
+    once: true        // Animate only on first scroll
+  });
       $('.owl-carousel').owlCarousel({
 
          loop: true,

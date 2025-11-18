@@ -74,12 +74,9 @@ nav {
 .text {
     z-index: 1000;
 
-    img {
-        position: relative;
-        top: -29%;
 
 
-    }
+
 
     h1 {
         font-family: $secondary-font;
@@ -446,8 +443,26 @@ nav {
 
     img {
         height: 100vh;
+        position: relative;
+        left: -100px;
+        /* start off-screen */
+        animation: slideIn 1s forwards, 2s 1s infinite;
+
 
     }
+
+    /* Slide in from left */
+    @keyframes slideIn {
+        from {
+            left: 900px;
+        }
+
+        to {
+            left: -60px;
+           
+        }
+    }
+
 
     ;
 }
@@ -1133,10 +1148,10 @@ input:focus {
 .square-div {
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
- 
+
     grid-template-rows: repeat(4, 0.5fr);
     gap: 10px;
-  
+
 
     padding: 10px;
 }
@@ -1178,10 +1193,10 @@ input:focus {
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
     grid-template-rows: repeat(4, 0.5fr);
-  padding: $fixed_margin;
+    padding: $fixed_margin;
 
     gap: $fixed_gap;
-  
+
 }
 
 
@@ -1293,11 +1308,10 @@ input:focus {
 
     .box-div {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 150px)
 
-        img {
+        grid-template-rows: repeat(2, 150px) img {
             object-fit: contain;
-         
+
         }
 
     }
@@ -1314,6 +1328,10 @@ input:focus {
 }
 
 @media (max-width:768px) {
+    .arrow {
+        display: none;
+    }
+
     .arrow1 {
         left: -100%;
 
