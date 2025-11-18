@@ -908,8 +908,9 @@ input:focus {
 
 
 .image1 {
-    top: -226px;
+    top: -232px;
     right: 115px;
+
 }
 
 .side-bar {
@@ -1132,10 +1133,10 @@ input:focus {
 .square-div {
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
-    /* smaller columns */
+ 
     grid-template-rows: repeat(4, 0.5fr);
     gap: 10px;
-    /* spacing between items */
+  
 
     padding: 10px;
 }
@@ -1148,10 +1149,7 @@ input:focus {
 
 }
 
-/* Button styling */
 
-
-/* Grid areas (corrected) */
 .square-div1 {
     grid-area: 1 / 1 / 2 / 2;
 }
@@ -1180,10 +1178,10 @@ input:focus {
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
     grid-template-rows: repeat(4, 0.5fr);
-    gap: 10px;
-    justify-content: start;
-    align-content: start;
-    padding: 10px;
+  padding: $fixed_margin;
+
+    gap: $fixed_gap;
+  
 }
 
 
@@ -1228,9 +1226,9 @@ input:focus {
 }
 
 .hero-img {
-    width: 35%;
-    top: 28%;
-    left: 53%;
+    width: 26%;
+    top: 29%;
+    left: 61%;
 
 
 }
@@ -1295,11 +1293,11 @@ input:focus {
 
     .box-div {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 150px);
+        grid-template-rows: repeat(2, 150px)
 
         img {
-            object-fit: cover;
-            height: fit-content;
+            object-fit: contain;
+         
         }
 
     }
