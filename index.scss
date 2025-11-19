@@ -1278,7 +1278,6 @@ input:focus {
 
 
 
-
     .navtab1 {
         ul li {
             display: flex;
@@ -1333,6 +1332,9 @@ input:focus {
         display: none;
     }
 
+ .simple h2{
+    font-size: $font-size + 5;
+ }
     .arrow1 {
         left: -100%;
 

@@ -1085,6 +1085,9 @@ input:focus {
   .arrow {
     display: none;
   }
+  .simple h2 {
+    font-size: 20px;
+  }
   .arrow1 {
     left: -100%;
   }
