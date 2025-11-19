@@ -910,7 +910,7 @@ input:focus {
     align-items: center;
 }
 
-.full-image .col:last-child {
+.full-image .col :last-child {
     border-right: none !important;
 
 }
@@ -920,6 +920,7 @@ input:focus {
     border-right: 1px solid #D9D9D9;
 
 }
+
 
 
 .image1 {

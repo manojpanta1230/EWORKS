@@ -734,7 +734,7 @@ input:focus {
   align-items: center;
 }
 
-.full-image .col:last-child {
+.full-image .col :last-child {
   border-right: none !important;
 }
 
