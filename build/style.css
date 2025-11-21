@@ -74,6 +74,9 @@ nav a {
   color: #2D358C;
   border-radius: 0;
 }
+.card img {
+  max-width: 100px;
+}
 .card:hover {
   background-color: #2D358C;
   color: #FFFFFF;
@@ -1084,6 +1087,9 @@ input:focus {
 @media (max-width: 768px) {
   .arrow {
     display: none;
+  }
+  .button1 {
+    padding: 3px 9px;
   }
   .simple h2 {
     font-size: 20px;

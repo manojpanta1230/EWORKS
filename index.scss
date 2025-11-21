@@ -99,7 +99,9 @@ nav {
     gap: $fixed_gap;
     color: $primary-color;
     border-radius: 0;
-
+ img{
+    max-width: 100px;
+ }
     &:hover {
         background-color: $primary-color;
         color: $secondary-color;
@@ -1330,6 +1332,9 @@ input:focus {
 @media (max-width:768px) {
     .arrow {
         display: none;
+    }
+    .button1{
+        padding: $fixed_margin - 7 $fixed_margin - 1 ;
     }
 
  .simple h2{
