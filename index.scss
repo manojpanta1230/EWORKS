@@ -136,6 +136,7 @@ nav {
     padding: $fixed_margin;
     color: $primary_color;
     gap: $fixed_gap + 10px;
+    min-height: $fixed_gap + 350;
 
     &:hover {
         background-color: $primary-color;
@@ -546,7 +547,7 @@ footer {
     background: $secondary-color;
     padding: 5px 10px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 0 0 0 23px;
     font-weight: bold;
 }
 

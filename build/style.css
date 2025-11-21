@@ -105,6 +105,7 @@ nav a {
   padding: 10px;
   color: #2D358C;
   gap: 20px;
+  min-height: 360px;
 }
 .long-card:hover {
   background-color: #2D358C;
@@ -442,7 +443,7 @@ footer {
   background: #FFFFFF;
   padding: 5px 10px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 0 0 0 23px;
   font-weight: bold;
 }
 
