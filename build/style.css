@@ -791,8 +791,7 @@ input:focus {
   background-color: #504388;
   color: #FFFFFF;
   height: 55px;
-  bottom: 3%;
-  left: 30%;
+  width: 100%;
   font-weight: 300;
   font-size: 16px;
 }
